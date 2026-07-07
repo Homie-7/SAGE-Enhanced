@@ -1,0 +1,32 @@
+{
+  "name": "teacher_success_story",
+  "description": "Single-contributor testimonial/impact piece about a teacher's success story.",
+  "status": "active",
+  "setup": {
+    "runtime_target": {
+      "value": null,
+      "origin": "default"
+    },
+    "tone": {
+      "value": null,
+      "origin": "default"
+    },
+    "cut_style": {
+      "value": "natural",
+      "origin": "default"
+    },
+    "source_handling": {
+      "value": "single",
+      "origin": "default"
+    }
+  },
+  "success_criteria": [
+    "value-first opening beat selected",
+    "ends on strongest resolved line",
+    "no interviewer prompts or false starts retained",
+    "paper edit validates against schema",
+    "approval gate enforced before rebuild",
+    "rebuilt XML passes integrity checks"
+  ],
+  "source_note": "inputs/source.xml is a faithful synthetic FCP7 export (xmeml v4, 25fps, linked V+A). Replace with a real Premiere export when material is cleared; structure and fixtures are drop-in compatible."
+}

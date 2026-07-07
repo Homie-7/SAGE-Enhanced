@@ -1,0 +1,374 @@
+{
+  "case_id": "lnd_showcase",
+  "sources": {
+    "electrotech": {
+      "feasibility": {
+        "source_id": "electrotech",
+        "items": [
+          {
+            "name": "frame_rate",
+            "ok": true,
+            "detail": "29.97 fps (ntsc=True), xmeml v4"
+          },
+          {
+            "name": "single_source_scope",
+            "ok": false,
+            "detail": "15 media file(s) across V2/A6. V1 rebuilds from ONE source timeline; multiple media files mean the LLM's plan and the deterministic rebuild must stay within spans this timeline actually contains \u2014 verified per beat at rebuild time, but cross-media storytelling like the human final is out of V1 scope."
+          },
+          {
+            "name": "clip_timing",
+            "ok": true,
+            "detail": "All clipitems carry numeric timing."
+          },
+          {
+            "name": "transcript_alignment",
+            "ok": true,
+            "detail": "Transcript fits the timeline (2098s \u2264 2097s)."
+          },
+          {
+            "name": "speaker_identification",
+            "ok": true,
+            "detail": "0/22 speakers carry real names; the rest will surface as IDENTITY_UNCERTAIN in the roster (canonical behaviour)."
+          }
+        ],
+        "provider_fit": {
+          "claude": "~8586 transcript tokens (chars/4 estimate) vs 180000 context: fits single-pass.",
+          "mock": "~8586 transcript tokens (chars/4 estimate) vs 1000000 context: fits single-pass.",
+          "val": "~8586 transcript tokens (chars/4 estimate) vs 16000 context: fits single-pass."
+        },
+        "overall_ok": false
+      },
+      "human_baseline": {
+        "reference": "/home/claude/sage/sage-internal/backend/benchmarks/cases/lnd_showcase/inputs/reference_after.xml",
+        "candidate": "/home/claude/sage/sage-internal/backend/benchmarks/cases/lnd_showcase/inputs/electrotech_before.xml",
+        "mediatype": "audio",
+        "shared_media": [
+          "0h5a3697.mp4",
+          "0h5a3699.mp4",
+          "0h5a3700.mp4",
+          "0u3a3697.mp4",
+          "0u3a3699.mp4",
+          "0u3a3700.mp4",
+          "zoom0033_tr12.wav",
+          "zoom0035_tr12.wav",
+          "zoom0036_tr12.wav"
+        ],
+        "reference_only_media": [
+          "0h5a3610.mp4",
+          "0h5a3612.mp4",
+          "0h5a3614.mp4",
+          "0h5a3615.mp4",
+          "0h5a3618.mp4",
+          "0u3a3621.mp4",
+          "0u3a3623.mp4",
+          "0u3a3625.mp4",
+          "0u3a3627.mp4",
+          "0u3a3629.mp4",
+          "zoom0023_tr12.wav",
+          "zoom0025_tr12.wav",
+          "zoom0027_tr12.wav",
+          "zoom0028_tr12.wav",
+          "zoom0031_tr12.wav"
+        ],
+        "candidate_only_media": [
+          "0h5a3698.mp4",
+          "0h5a3701.mp4",
+          "0u3a3698.mp4",
+          "0u3a3701.mp4",
+          "zoom0034_tr12.wav",
+          "zoom0037_tr12.wav"
+        ],
+        "reference_runtime_s": 122.623,
+        "candidate_runtime_s": 2097.195,
+        "reference_kept_s": 152.95,
+        "candidate_kept_s": 4133.63,
+        "overlap_s": 152.95,
+        "recall": 1.0,
+        "precision": 0.037,
+        "jaccard": 0.037,
+        "order_similarity": 0.657,
+        "reference_shots": 30,
+        "candidate_shots": 18,
+        "reference_avg_shot_s": 5.1,
+        "candidate_avg_shot_s": 229.65,
+        "divergences": [
+          {
+            "media_key": "zoom0035_tr12.wav",
+            "source_in_s": 0.0,
+            "source_out_s": 489.49,
+            "duration_s": 489.49,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "I am recording. So we've got four questions. I'll go to them. \u2026 need specifically without causing too much disruption. And yeah, like with having"
+          },
+          {
+            "media_key": "0h5a3699.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 488.45,
+            "duration_s": 488.45,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0u3a3699.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 487.89,
+            "duration_s": 487.89,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3697.mp4",
+            "source_in_s": 322.89,
+            "source_out_s": 595.19,
+            "duration_s": 272.31,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "And they'll work with their pear member to help with that. Also, \u2026 the numbers do and the behavior of the numbers within formulas. But"
+          },
+          {
+            "media_key": "0u3a3697.mp4",
+            "source_in_s": 297.46,
+            "source_out_s": 569.77,
+            "duration_s": 272.31,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "zoom0033_tr12.wav",
+            "source_in_s": 322.12,
+            "source_out_s": 594.43,
+            "duration_s": 272.31,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "(no transcript speech in this range)"
+          },
+          {
+            "media_key": "0h5a3697.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 251.68,
+            "duration_s": 251.68,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "Any time. I think if you can paraphrase good questions. Yeah, that \u2026 interesting to bounce the ball and see where I can slot in."
+          },
+          {
+            "media_key": "zoom0033_tr12.wav",
+            "source_in_s": 0.0,
+            "source_out_s": 250.92,
+            "duration_s": 250.92,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "(no transcript speech in this range)"
+          },
+          {
+            "media_key": "0u3a3697.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 226.26,
+            "duration_s": 226.26,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0u3a3697.mp4",
+            "source_in_s": 579.88,
+            "source_out_s": 777.11,
+            "duration_s": 197.23,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          }
+        ],
+        "limits": [
+          "Media matched by file name; renamed/re-exported media reports as unshared.",
+          "Measures which source material was kept, not trims, mix, grade, b-roll placement, music, or multi-track craft.",
+          "Numbers locate differences for human review; they do not grade the edit."
+        ]
+      }
+    },
+    "interior_design": {
+      "feasibility": {
+        "source_id": "interior_design",
+        "items": [
+          {
+            "name": "frame_rate",
+            "ok": true,
+            "detail": "29.97 fps (ntsc=True), xmeml v4"
+          },
+          {
+            "name": "single_source_scope",
+            "ok": false,
+            "detail": "31 media file(s) across V3/A6. V1 rebuilds from ONE source timeline; multiple media files mean the LLM's plan and the deterministic rebuild must stay within spans this timeline actually contains \u2014 verified per beat at rebuild time, but cross-media storytelling like the human final is out of V1 scope."
+          },
+          {
+            "name": "clip_timing",
+            "ok": true,
+            "detail": "All clipitems carry numeric timing."
+          },
+          {
+            "name": "transcript_alignment",
+            "ok": true,
+            "detail": "Transcript fits the timeline (4654s \u2264 4656s)."
+          },
+          {
+            "name": "speaker_identification",
+            "ok": true,
+            "detail": "0/43 speakers carry real names; the rest will surface as IDENTITY_UNCERTAIN in the roster (canonical behaviour)."
+          }
+        ],
+        "provider_fit": {
+          "claude": "~18218 transcript tokens (chars/4 estimate) vs 180000 context: fits single-pass.",
+          "mock": "~18218 transcript tokens (chars/4 estimate) vs 1000000 context: fits single-pass.",
+          "val": "~18218 transcript tokens (chars/4 estimate) vs 16000 context: DOES NOT FIT single-pass (short by ~5218); V1 has no chunking \u2014 run fails explicitly."
+        },
+        "overall_ok": false
+      },
+      "human_baseline": {
+        "reference": "/home/claude/sage/sage-internal/backend/benchmarks/cases/lnd_showcase/inputs/reference_after.xml",
+        "candidate": "/home/claude/sage/sage-internal/backend/benchmarks/cases/lnd_showcase/inputs/interior_design_before.xml",
+        "mediatype": "audio",
+        "shared_media": [
+          "0h5a3610.mp4",
+          "0h5a3612.mp4",
+          "0h5a3614.mp4",
+          "0h5a3615.mp4",
+          "0h5a3618.mp4",
+          "0u3a3621.mp4",
+          "0u3a3623.mp4",
+          "0u3a3625.mp4",
+          "0u3a3627.mp4",
+          "0u3a3629.mp4",
+          "zoom0023_tr12.wav",
+          "zoom0025_tr12.wav",
+          "zoom0027_tr12.wav",
+          "zoom0028_tr12.wav",
+          "zoom0031_tr12.wav"
+        ],
+        "reference_only_media": [
+          "0h5a3697.mp4",
+          "0h5a3699.mp4",
+          "0h5a3700.mp4",
+          "0u3a3697.mp4",
+          "0u3a3699.mp4",
+          "0u3a3700.mp4",
+          "zoom0033_tr12.wav",
+          "zoom0035_tr12.wav",
+          "zoom0036_tr12.wav"
+        ],
+        "candidate_only_media": [
+          "0h5a3611.mp4",
+          "0h5a3613.mp4",
+          "0h5a3616.mp4",
+          "0h5a3617.mp4",
+          "0h5a3619.mp4",
+          "0u3a3620.mp4",
+          "0u3a3622.mp4",
+          "0u3a3624.mp4",
+          "0u3a3626.mp4",
+          "0u3a3628.mp4",
+          "0u3a3630.mp4",
+          "zoom0024_tr12.wav",
+          "zoom0026_tr12.wav",
+          "zoom0029_tr12.wav",
+          "zoom0030_tr12.wav",
+          "zoom0032_tr12.wav"
+        ],
+        "reference_runtime_s": 122.623,
+        "candidate_runtime_s": 4655.518,
+        "reference_kept_s": 214.91,
+        "candidate_kept_s": 9123.31,
+        "overlap_s": 214.91,
+        "recall": 1.0,
+        "precision": 0.024,
+        "jaccard": 0.024,
+        "order_similarity": 0.69,
+        "reference_shots": 42,
+        "candidate_shots": 30,
+        "reference_avg_shot_s": 5.12,
+        "candidate_avg_shot_s": 304.11,
+        "divergences": [
+          {
+            "media_key": "zoom0023_tr12.wav",
+            "source_in_s": 0.0,
+            "source_out_s": 944.31,
+            "duration_s": 944.31,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "Okay. Sounds like great stuff. Can you tell us a bit more \u2026 love about it. So it's very dependent on the student themselves. So"
+          },
+          {
+            "media_key": "0h5a3610.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 941.41,
+            "duration_s": 941.41,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0u3a3621.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 940.94,
+            "duration_s": 940.94,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3612.mp4",
+            "source_in_s": 54.49,
+            "source_out_s": 544.31,
+            "duration_s": 489.82,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0u3a3623.mp4",
+            "source_in_s": 54.62,
+            "source_out_s": 543.08,
+            "duration_s": 488.45,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "that. Can I get you to elaborate a little bit more? Yeah, \u2026 and sound amazing. Thank you. Thanks. All of it. There you go."
+          },
+          {
+            "media_key": "zoom0025_tr12.wav",
+            "source_in_s": 53.02,
+            "source_out_s": 541.07,
+            "duration_s": 488.05,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3615.mp4",
+            "source_in_s": 0.0,
+            "source_out_s": 407.17,
+            "duration_s": 407.17,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "Yes. Yeah. I'll start with the first question. Give it a bit \u2026 understanding the assignments more so I can get them completed on time."
+          },
+          {
+            "media_key": "0u3a3621.mp4",
+            "source_in_s": 960.89,
+            "source_out_s": 1367.23,
+            "duration_s": 406.34,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "zoom0028_tr12.wav",
+            "source_in_s": 0.0,
+            "source_out_s": 406.07,
+            "duration_s": 406.07,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "zoom0023_tr12.wav",
+            "source_in_s": 964.26,
+            "source_out_s": 1369.27,
+            "duration_s": 405.0,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": "are. And I think that is one of the key things that \u2026 are we. Because this is taking a long time. Isn't it good?"
+          }
+        ],
+        "limits": [
+          "Media matched by file name; renamed/re-exported media reports as unshared.",
+          "Measures which source material was kept, not trims, mix, grade, b-roll placement, music, or multi-track craft.",
+          "Numbers locate differences for human review; they do not grade the edit."
+        ]
+      }
+    }
+  },
+  "human_baseline": null
+}

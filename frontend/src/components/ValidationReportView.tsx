@@ -1,28 +1,31 @@
-/** Structured validation report: pass/warn/fail per check, explicit blockers. */
+/** Structured validation report: pass/warn/fail per check, blockers explicit. */
 import type { ValidationReport } from "../types/state";
-
-const COLOUR = { pass: "#2e7d32", warn: "#b26a00", fail: "#c62828" } as const;
 
 export function ValidationReportView({ report }: { report: ValidationReport }) {
   return (
-    <div>
-      <h3>Validation — overall:{" "}
-        <span style={{ color: COLOUR[report.overall] }}>{report.overall.toUpperCase()}</span></h3>
-      <ul>
+    <div className="panel">
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <h2 style={{ margin: 0 }}>Validation</h2>
+        <span className={"pill " + (report.overall === "pass" ? "ok"
+                       : report.overall === "warn" ? "warn" : "danger")}>
+          {report.overall}
+        </span>
+      </div>
+      <ul className="check-list">
         {report.checks.map(c => (
           <li key={c.name}>
-            <span style={{ color: COLOUR[c.outcome] }}>[{c.outcome}]</span>{" "}
-            <strong>{c.name}</strong>{c.detail ? ` — ${c.detail}` : ""}
+            <span className={"check-outcome " + c.outcome}>{c.outcome}</span>
+            <span className="check-name">{c.name.replaceAll("_", " ")}</span>
+            <span className="check-detail">{c.detail ?? ""}</span>
           </li>
         ))}
       </ul>
       {report.blockers.length > 0 && (
-        <div style={{ border: "2px solid #c62828", padding: "0.5em 1em" }}>
-          <h4>Blockers</h4>
+        <div className="alert danger">
+          <h3>Blocked — what's needed</h3>
           {report.blockers.map((b, i) => (
-            <p key={i}><strong>{b.check}</strong><br />
-              Why it blocks: {b.why_it_blocks}<br />
-              What is needed: {b.what_is_needed}</p>
+            <p key={i}><strong>{b.check.replaceAll("_", " ")}</strong> — {b.why_it_blocks}
+              <br />{b.what_is_needed}</p>
           ))}
         </div>
       )}

@@ -1,0 +1,4686 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmeml version="4">
+	<sequence id="sequence-1" TL.SQAudioVisibleBase="0" TL.SQVideoVisibleBase="0" TL.SQVisibleBaseTime="202521532264005" TL.SQAVDividerPosition="0.5" TL.SQHideShyTracks="0" TL.SQHeaderWidth="204" TL.SQDataTrackViewControlState="0" Monitor.ProgramZoomOut="731444152320000" Monitor.ProgramZoomIn="706042552320000" TL.SQTimePerPixel="5.7603479124700447" MZ.EditLine="716812830720000" MZ.Sequence.PreviewFrameSizeHeight="2160" MZ.Sequence.PreviewFrameSizeWidth="3840" MZ.Sequence.AudioTimeDisplayFormat="200" MZ.Sequence.PreviewRenderingClassID="1061109567" MZ.Sequence.PreviewRenderingPresetCodec="1919706400" MZ.Sequence.PreviewRenderingPresetPath="EncoderPresets/SequencePreview/795454d9-d3c2-429d-9474-923ab13b7018/QuickTime.epr" MZ.Sequence.PreviewUseMaxBitDepth="false" MZ.Sequence.EditingModeGUID="795454d9-d3c2-429d-9474-923ab13b7018" MZ.Sequence.VideoTimeDisplayFormat="101" explodedTracks="true">
+		<uuid>b71bb328-853a-4db6-aa57-9ebaab067be4</uuid>
+		<duration>4186</duration>
+		<rate>
+			<timebase>25</timebase>
+			<ntsc>FALSE</ntsc>
+		</rate>
+		<name>TSS Narrative Cut v8 Komal Led Smooth</name>
+		<media>
+			<video>
+				<format>
+					<samplecharacteristics>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<codec>
+							<name>Apple ProRes 422</name>
+							<appspecificdata>
+								<appname>Final Cut Pro</appname>
+								<appmanufacturer>Apple Inc.</appmanufacturer>
+								<appversion>7.0</appversion>
+								<data>
+									<qtcodec>
+										<codecname>Apple ProRes 422</codecname>
+										<codectypename>Apple ProRes 422</codectypename>
+										<codectypecode>apcn</codectypecode>
+										<codecvendorcode>appl</codecvendorcode>
+										<spatialquality>1024</spatialquality>
+										<temporalquality>0</temporalquality>
+										<keyframerate>0</keyframerate>
+										<datarate>0</datarate>
+									</qtcodec>
+								</data>
+							</appspecificdata>
+						</codec>
+						<width>3840</width>
+						<height>2160</height>
+						<anamorphic>FALSE</anamorphic>
+						<pixelaspectratio>square</pixelaspectratio>
+						<fielddominance>none</fielddominance>
+						<colordepth>24</colordepth>
+					</samplecharacteristics>
+				</format>
+				<track TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+				<clipitem id="clipitem-213">
+						<masterclipid>masterclip-28</masterclipid>
+						<name>0U3A3170.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>134</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3073</end>
+						<in>39</in>
+						<out>134</out>
+						<pproTicksIn>396264960000</pproTicksIn>
+						<pproTicksOut>1361525760000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-28">
+							<name>0U3A3170.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/B-Rolls/Videos/0U3A3170.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>134</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>17:10:46:11</string>
+								<frame>1546161</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-214">
+						<masterclipid>masterclip-29</masterclipid>
+						<name>0U3A3171.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>173</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3073</start>
+						<end>3246</end>
+						<in>0</in>
+						<out>173</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1757790720000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-29">
+							<name>0U3A3171.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/B-Rolls/Videos/0U3A3171.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>173</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>17:10:51:20</string>
+								<frame>1546295</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-215">
+						<masterclipid>masterclip-30</masterclipid>
+						<name>0U3A3172.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>164</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3246</start>
+						<end>3386</end>
+						<in>0</in>
+						<out>140</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1422489600000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-30">
+							<name>0U3A3172.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/B-Rolls/Videos/0U3A3172.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>164</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>17:10:58:18</string>
+								<frame>1546468</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					</track>
+				<track TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="0">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+				<clipitem id="clipitem-164">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>292</in>
+						<out>489</out>
+						<pproTicksIn>2966906880000</pproTicksIn>
+						<pproTicksOut>4968552960000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-33">
+							<name>0H5A3089.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%202/0H5A3089.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>8025</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>15:41:02:11</string>
+								<frame>1411561</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-171">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4626</in>
+						<out>5364</out>
+						<pproTicksIn>47003120640000</pproTicksIn>
+						<pproTicksOut>54501672960000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-33" /></clipitem>
+					<clipitem id="clipitem-178">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6365</in>
+						<out>6579</out>
+						<pproTicksIn>64672473600000</pproTicksIn>
+						<pproTicksOut>66846850560000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-33" /></clipitem>
+					<clipitem id="clipitem-185">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7342</in>
+						<out>7738</out>
+						<pproTicksIn>74599418880000</pproTicksIn>
+						<pproTicksOut>78623032320000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-33" /></clipitem>
+					<clipitem id="clipitem-192">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>2033</in>
+						<out>2397</out>
+						<pproTicksIn>20656581120000</pproTicksIn>
+						<pproTicksOut>24355054080000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-35">
+							<name>0H5A3093.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%202/0H5A3093.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>6045</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>15:51:22:05</string>
+								<frame>1427055</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-199">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3846</in>
+						<out>4227</out>
+						<pproTicksIn>39077821440000</pproTicksIn>
+						<pproTicksOut>42949025280000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-35" /></clipitem>
+					<clipitem id="clipitem-206">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>5200</in>
+						<out>5888</out>
+						<pproTicksIn>52835328000000</pproTicksIn>
+						<pproTicksOut>59825848320000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-37">
+							<name>0H5A3095.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%202/0H5A3095.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>7796</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:00:45:14</string>
+								<frame>1441139</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-216">
+						<masterclipid>masterclip-39</masterclipid>
+						<name>0H5A3097.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7183</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>4814</in>
+						<out>5222</out>
+						<pproTicksIn>48913320960000</pproTicksIn>
+						<pproTicksOut>53058862080000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-39">
+							<name>0H5A3097.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%202/0H5A3097.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>7183</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:10:54:17</string>
+								<frame>1456367</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-229">
+						<masterclipid>masterclip-40</masterclipid>
+						<name>0H5A3098.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>22898</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17514</in>
+						<out>17894</out>
+						<pproTicksIn>177953448960000</pproTicksIn>
+						<pproTicksOut>181814492160000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-40">
+							<name>0H5A3098.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%202/0H5A3098.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>22898</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:15:42:00</string>
+								<frame>1463550</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-236">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>7258</in>
+						<out>7678</out>
+						<pproTicksIn>73745925120000</pproTicksIn>
+						<pproTicksOut>78013393920000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-37" /></clipitem>
+					</track>
+				<track TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="0">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+				<clipitem id="clipitem-165">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>233</in>
+						<out>430</out>
+						<pproTicksIn>2367429120000</pproTicksIn>
+						<pproTicksOut>4369075200000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-42">
+							<name>0U3A3112.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%201/0U3A3112.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>7952</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:14:46:19</string>
+								<frame>1462169</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-172">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4567</in>
+						<out>5305</out>
+						<pproTicksIn>46403642880000</pproTicksIn>
+						<pproTicksOut>53902195200000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-42" /></clipitem>
+					<clipitem id="clipitem-179">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6306</in>
+						<out>6520</out>
+						<pproTicksIn>64072995840000</pproTicksIn>
+						<pproTicksOut>66247372800000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-42" /></clipitem>
+					<clipitem id="clipitem-186">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7283</in>
+						<out>7679</out>
+						<pproTicksIn>73999941120000</pproTicksIn>
+						<pproTicksOut>78023554560000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-42" /></clipitem>
+					<clipitem id="clipitem-193">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>1999</in>
+						<out>2363</out>
+						<pproTicksIn>20311119360000</pproTicksIn>
+						<pproTicksOut>24009592320000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-44">
+							<name>0U3A3116.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%201/0U3A3116.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>5618</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:24:46:02</string>
+								<frame>1477152</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-200">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3812</in>
+						<out>4193</out>
+						<pproTicksIn>38732359680000</pproTicksIn>
+						<pproTicksOut>42603563520000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-44" /></clipitem>
+					<clipitem id="clipitem-207">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>4584</in>
+						<out>5272</out>
+						<pproTicksIn>46576373760000</pproTicksIn>
+						<pproTicksOut>53566894080000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-46">
+							<name>0U3A3118.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%201/0U3A3118.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>7129</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:33:50:21</string>
+								<frame>1490771</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-217">
+						<masterclipid>masterclip-48</masterclipid>
+						<name>0U3A3120.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7295</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>5007</in>
+						<out>5415</out>
+						<pproTicksIn>50874324480000</pproTicksIn>
+						<pproTicksOut>55019865600000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-48">
+							<name>0U3A3120.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%201/0U3A3120.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>7295</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:43:28:11</string>
+								<frame>1505211</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-230">
+						<masterclipid>masterclip-49</masterclipid>
+						<name>0U3A3121.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>26716</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17455</in>
+						<out>17835</out>
+						<pproTicksIn>177353971200000</pproTicksIn>
+						<pproTicksOut>181215014400000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<file id="file-49">
+							<name>0U3A3121.MP4</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Cam%201/0U3A3121.MP4</pathurl>
+							<rate>
+								<timebase>25</timebase>
+								<ntsc>FALSE</ntsc>
+							</rate>
+							<duration>26716</duration>
+							<timecode>
+								<rate>
+									<timebase>25</timebase>
+									<ntsc>FALSE</ntsc>
+								</rate>
+								<string>16:48:20:06</string>
+								<frame>1512506</frame>
+								<displayformat>NDF</displayformat>
+							</timecode>
+							<media>
+								<video>
+									<samplecharacteristics>
+										<rate>
+											<timebase>25</timebase>
+											<ntsc>FALSE</ntsc>
+										</rate>
+										<width>3840</width>
+										<height>2160</height>
+										<anamorphic>FALSE</anamorphic>
+										<pixelaspectratio>square</pixelaspectratio>
+										<fielddominance>none</fielddominance>
+									</samplecharacteristics>
+								</video>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>2</channelcount>
+								</audio>
+							</media>
+						</file>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-237">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>6642</in>
+						<out>7062</out>
+						<pproTicksIn>67486970880000</pproTicksIn>
+						<pproTicksOut>71754439680000</pproTicksOut>
+						<alphatype>none</alphatype>
+						<pixelaspectratio>square</pixelaspectratio>
+						<anamorphic>FALSE</anamorphic>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-46" /></clipitem>
+					</track>
+				<track TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="0">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+				</track>
+			</video>
+			<audio>
+				<numOutputChannels>1</numOutputChannels>
+				<format>
+					<samplecharacteristics>
+						<depth>16</depth>
+						<samplerate>48000</samplerate>
+					</samplecharacteristics>
+				</format>
+				<outputs>
+					<group>
+						<index>1</index>
+						<numchannels>1</numchannels>
+						<downmix>0</downmix>
+						<channel>
+							<index>1</index>
+						</channel>
+					</group>
+					<group>
+						<index>2</index>
+						<numchannels>1</numchannels>
+						<downmix>0</downmix>
+						<channel>
+							<index>2</index>
+						</channel>
+					</group>
+				</outputs>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>1</outputchannelindex>
+				<clipitem id="clipitem-218" premiereChannelType="stereo">
+						<masterclipid>masterclip-28</masterclipid>
+						<name>0U3A3170.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>134</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3073</end>
+						<in>39</in>
+						<out>134</out>
+						<pproTicksIn>396264960000</pproTicksIn>
+						<pproTicksOut>1361525760000</pproTicksOut>
+						<file id="file-28" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-219" premiereChannelType="stereo">
+						<masterclipid>masterclip-29</masterclipid>
+						<name>0U3A3171.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>173</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3073</start>
+						<end>3246</end>
+						<in>0</in>
+						<out>173</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1757790720000</pproTicksOut>
+						<file id="file-29" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-220" premiereChannelType="stereo">
+						<masterclipid>masterclip-30</masterclipid>
+						<name>0U3A3172.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>164</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3246</start>
+						<end>3386</end>
+						<in>0</in>
+						<out>140</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1422489600000</pproTicksOut>
+						<file id="file-30" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="1" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>2</outputchannelindex>
+				<clipitem id="clipitem-221" premiereChannelType="stereo">
+						<masterclipid>masterclip-28</masterclipid>
+						<name>0U3A3170.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>134</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3073</end>
+						<in>39</in>
+						<out>134</out>
+						<pproTicksIn>396264960000</pproTicksIn>
+						<pproTicksOut>1361525760000</pproTicksOut>
+						<file id="file-28" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-222" premiereChannelType="stereo">
+						<masterclipid>masterclip-29</masterclipid>
+						<name>0U3A3171.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>173</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3073</start>
+						<end>3246</end>
+						<in>0</in>
+						<out>173</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1757790720000</pproTicksOut>
+						<file id="file-29" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					<clipitem id="clipitem-223" premiereChannelType="stereo">
+						<masterclipid>masterclip-30</masterclipid>
+						<name>0U3A3172.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>164</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3246</start>
+						<end>3386</end>
+						<in>0</in>
+						<out>140</out>
+						<pproTicksIn>0</pproTicksIn>
+						<pproTicksOut>1422489600000</pproTicksOut>
+						<file id="file-30" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+						<labels>
+							<label2>Rose</label2>
+						</labels>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>1</outputchannelindex>
+				<clipitem id="clipitem-166" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>233</in>
+						<out>430</out>
+						<pproTicksIn>2367429120000</pproTicksIn>
+						<pproTicksOut>4369075200000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-173" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4567</in>
+						<out>5305</out>
+						<pproTicksIn>46403642880000</pproTicksIn>
+						<pproTicksOut>53902195200000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-180" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6306</in>
+						<out>6520</out>
+						<pproTicksIn>64072995840000</pproTicksIn>
+						<pproTicksOut>66247372800000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-187" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7283</in>
+						<out>7679</out>
+						<pproTicksIn>73999941120000</pproTicksIn>
+						<pproTicksOut>78023554560000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-194" premiereChannelType="stereo">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>1999</in>
+						<out>2363</out>
+						<pproTicksIn>20311119360000</pproTicksIn>
+						<pproTicksOut>24009592320000</pproTicksOut>
+						<file id="file-44" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-201" premiereChannelType="stereo">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3812</in>
+						<out>4193</out>
+						<pproTicksIn>38732359680000</pproTicksIn>
+						<pproTicksOut>42603563520000</pproTicksOut>
+						<file id="file-44" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-208" premiereChannelType="stereo">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>4584</in>
+						<out>5272</out>
+						<pproTicksIn>46576373760000</pproTicksIn>
+						<pproTicksOut>53566894080000</pproTicksOut>
+						<file id="file-46" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-224" premiereChannelType="stereo">
+						<masterclipid>masterclip-48</masterclipid>
+						<name>0U3A3120.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7295</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>5007</in>
+						<out>5415</out>
+						<pproTicksIn>50874324480000</pproTicksIn>
+						<pproTicksOut>55019865600000</pproTicksOut>
+						<file id="file-48" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-231" premiereChannelType="stereo">
+						<masterclipid>masterclip-49</masterclipid>
+						<name>0U3A3121.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>26716</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17455</in>
+						<out>17835</out>
+						<pproTicksIn>177353971200000</pproTicksIn>
+						<pproTicksOut>181215014400000</pproTicksOut>
+						<file id="file-49" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-238" premiereChannelType="stereo">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>6642</in>
+						<out>7062</out>
+						<pproTicksIn>67486970880000</pproTicksIn>
+						<pproTicksOut>71754439680000</pproTicksOut>
+						<file id="file-46" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="1" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>2</outputchannelindex>
+				<clipitem id="clipitem-167" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>233</in>
+						<out>430</out>
+						<pproTicksIn>2367429120000</pproTicksIn>
+						<pproTicksOut>4369075200000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-174" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4567</in>
+						<out>5305</out>
+						<pproTicksIn>46403642880000</pproTicksIn>
+						<pproTicksOut>53902195200000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-181" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6306</in>
+						<out>6520</out>
+						<pproTicksIn>64072995840000</pproTicksIn>
+						<pproTicksOut>66247372800000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-188" premiereChannelType="stereo">
+						<masterclipid>masterclip-42</masterclipid>
+						<name>0U3A3112.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7952</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7283</in>
+						<out>7679</out>
+						<pproTicksIn>73999941120000</pproTicksIn>
+						<pproTicksOut>78023554560000</pproTicksOut>
+						<file id="file-42" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-195" premiereChannelType="stereo">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>1999</in>
+						<out>2363</out>
+						<pproTicksIn>20311119360000</pproTicksIn>
+						<pproTicksOut>24009592320000</pproTicksOut>
+						<file id="file-44" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-202" premiereChannelType="stereo">
+						<masterclipid>masterclip-44</masterclipid>
+						<name>0U3A3116.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>5618</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3812</in>
+						<out>4193</out>
+						<pproTicksIn>38732359680000</pproTicksIn>
+						<pproTicksOut>42603563520000</pproTicksOut>
+						<file id="file-44" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-209" premiereChannelType="stereo">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>4584</in>
+						<out>5272</out>
+						<pproTicksIn>46576373760000</pproTicksIn>
+						<pproTicksOut>53566894080000</pproTicksOut>
+						<file id="file-46" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-225" premiereChannelType="stereo">
+						<masterclipid>masterclip-48</masterclipid>
+						<name>0U3A3120.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7295</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>5007</in>
+						<out>5415</out>
+						<pproTicksIn>50874324480000</pproTicksIn>
+						<pproTicksOut>55019865600000</pproTicksOut>
+						<file id="file-48" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-232" premiereChannelType="stereo">
+						<masterclipid>masterclip-49</masterclipid>
+						<name>0U3A3121.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>26716</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17455</in>
+						<out>17835</out>
+						<pproTicksIn>177353971200000</pproTicksIn>
+						<pproTicksOut>181215014400000</pproTicksOut>
+						<file id="file-49" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-239" premiereChannelType="stereo">
+						<masterclipid>masterclip-46</masterclipid>
+						<name>0U3A3118.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7129</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>6642</in>
+						<out>7062</out>
+						<pproTicksIn>67486970880000</pproTicksIn>
+						<pproTicksOut>71754439680000</pproTicksOut>
+						<file id="file-46" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>1</outputchannelindex>
+				<clipitem id="clipitem-168" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>292</in>
+						<out>489</out>
+						<pproTicksIn>2966906880000</pproTicksIn>
+						<pproTicksOut>4968552960000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-175" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4626</in>
+						<out>5364</out>
+						<pproTicksIn>47003120640000</pproTicksIn>
+						<pproTicksOut>54501672960000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-182" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6365</in>
+						<out>6579</out>
+						<pproTicksIn>64672473600000</pproTicksIn>
+						<pproTicksOut>66846850560000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-189" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7342</in>
+						<out>7738</out>
+						<pproTicksIn>74599418880000</pproTicksIn>
+						<pproTicksOut>78623032320000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-196" premiereChannelType="stereo">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>2033</in>
+						<out>2397</out>
+						<pproTicksIn>20656581120000</pproTicksIn>
+						<pproTicksOut>24355054080000</pproTicksOut>
+						<file id="file-35" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-203" premiereChannelType="stereo">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3846</in>
+						<out>4227</out>
+						<pproTicksIn>39077821440000</pproTicksIn>
+						<pproTicksOut>42949025280000</pproTicksOut>
+						<file id="file-35" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-210" premiereChannelType="stereo">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>5200</in>
+						<out>5888</out>
+						<pproTicksIn>52835328000000</pproTicksIn>
+						<pproTicksOut>59825848320000</pproTicksOut>
+						<file id="file-37" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-226" premiereChannelType="stereo">
+						<masterclipid>masterclip-39</masterclipid>
+						<name>0H5A3097.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7183</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>4814</in>
+						<out>5222</out>
+						<pproTicksIn>48913320960000</pproTicksIn>
+						<pproTicksOut>53058862080000</pproTicksOut>
+						<file id="file-39" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-233" premiereChannelType="stereo">
+						<masterclipid>masterclip-40</masterclipid>
+						<name>0H5A3098.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>22898</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17514</in>
+						<out>17894</out>
+						<pproTicksIn>177953448960000</pproTicksIn>
+						<pproTicksOut>181814492160000</pproTicksOut>
+						<file id="file-40" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-240" premiereChannelType="stereo">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>7258</in>
+						<out>7678</out>
+						<pproTicksIn>73745925120000</pproTicksIn>
+						<pproTicksOut>78013393920000</pproTicksOut>
+						<file id="file-37" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="1" totalExplodedTrackCount="2" premiereTrackType="Mono">
+					<enabled>FALSE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>2</outputchannelindex>
+				<clipitem id="clipitem-169" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>292</in>
+						<out>489</out>
+						<pproTicksIn>2966906880000</pproTicksIn>
+						<pproTicksOut>4968552960000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-176" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4626</in>
+						<out>5364</out>
+						<pproTicksIn>47003120640000</pproTicksIn>
+						<pproTicksOut>54501672960000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-183" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6365</in>
+						<out>6579</out>
+						<pproTicksIn>64672473600000</pproTicksIn>
+						<pproTicksOut>66846850560000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-190" premiereChannelType="stereo">
+						<masterclipid>masterclip-33</masterclipid>
+						<name>0H5A3089.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>8025</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7342</in>
+						<out>7738</out>
+						<pproTicksIn>74599418880000</pproTicksIn>
+						<pproTicksOut>78623032320000</pproTicksOut>
+						<file id="file-33" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-197" premiereChannelType="stereo">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>2033</in>
+						<out>2397</out>
+						<pproTicksIn>20656581120000</pproTicksIn>
+						<pproTicksOut>24355054080000</pproTicksOut>
+						<file id="file-35" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-204" premiereChannelType="stereo">
+						<masterclipid>masterclip-35</masterclipid>
+						<name>0H5A3093.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>6045</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3846</in>
+						<out>4227</out>
+						<pproTicksIn>39077821440000</pproTicksIn>
+						<pproTicksOut>42949025280000</pproTicksOut>
+						<file id="file-35" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-211" premiereChannelType="stereo">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>5200</in>
+						<out>5888</out>
+						<pproTicksIn>52835328000000</pproTicksIn>
+						<pproTicksOut>59825848320000</pproTicksOut>
+						<file id="file-37" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-227" premiereChannelType="stereo">
+						<masterclipid>masterclip-39</masterclipid>
+						<name>0H5A3097.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7183</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>4814</in>
+						<out>5222</out>
+						<pproTicksIn>48913320960000</pproTicksIn>
+						<pproTicksOut>53058862080000</pproTicksOut>
+						<file id="file-39" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-234" premiereChannelType="stereo">
+						<masterclipid>masterclip-40</masterclipid>
+						<name>0H5A3098.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>22898</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17514</in>
+						<out>17894</out>
+						<pproTicksIn>177953448960000</pproTicksIn>
+						<pproTicksOut>181814492160000</pproTicksOut>
+						<file id="file-40" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-241" premiereChannelType="stereo">
+						<masterclipid>masterclip-37</masterclipid>
+						<name>0H5A3095.MP4</name>
+						<enabled>TRUE</enabled>
+						<duration>7796</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>7258</in>
+						<out>7678</out>
+						<pproTicksIn>73745925120000</pproTicksIn>
+						<pproTicksOut>78013393920000</pproTicksOut>
+						<file id="file-37" />
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>2</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="81" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="1" premiereTrackType="Mono">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>1</outputchannelindex>
+				<clipitem id="clipitem-170" premiereChannelType="mono">
+						<masterclipid>masterclip-53</masterclipid>
+						<name>ZOOM0065_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>8033</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>0</start>
+						<end>197</end>
+						<in>271</in>
+						<out>468</out>
+						<pproTicksIn>2753533440000</pproTicksIn>
+						<pproTicksOut>4755179520000</pproTicksOut>
+						<file id="file-53">
+							<name>ZOOM0065_Tr3.WAV</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Audio/Komal/ZOOM0065_Tr3.WAV</pathurl>
+							<rate>
+								<timebase>30</timebase>
+								<ntsc>TRUE</ntsc>
+							</rate>
+							<duration>9630</duration>
+							<timecode>
+								<rate>
+									<timebase>30</timebase>
+									<ntsc>TRUE</ntsc>
+								</rate>
+								<string>11;32;08;01</string>
+								<frame>1244595</frame>
+								<displayformat>DF</displayformat>
+							</timecode>
+							<media>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>1</channelcount>
+									<audiochannel>
+										<sourcechannel>1</sourcechannel>
+									</audiochannel>
+								</audio>
+							</media>
+						</file>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-177" premiereChannelType="mono">
+						<masterclipid>masterclip-53</masterclipid>
+						<name>ZOOM0065_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>8033</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>197</start>
+						<end>935</end>
+						<in>4605</in>
+						<out>5343</out>
+						<pproTicksIn>46789747200000</pproTicksIn>
+						<pproTicksOut>54288299520000</pproTicksOut>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-53" /></clipitem>
+					<clipitem id="clipitem-184" premiereChannelType="mono">
+						<masterclipid>masterclip-53</masterclipid>
+						<name>ZOOM0065_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>8033</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>935</start>
+						<end>1149</end>
+						<in>6344</in>
+						<out>6558</out>
+						<pproTicksIn>64459100160000</pproTicksIn>
+						<pproTicksOut>66633477120000</pproTicksOut>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-53" /></clipitem>
+					<clipitem id="clipitem-191" premiereChannelType="mono">
+						<masterclipid>masterclip-53</masterclipid>
+						<name>ZOOM0065_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>8033</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1149</start>
+						<end>1545</end>
+						<in>7321</in>
+						<out>7717</out>
+						<pproTicksIn>74386045440000</pproTicksIn>
+						<pproTicksOut>78409658880000</pproTicksOut>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-53" /></clipitem>
+					<clipitem id="clipitem-198" premiereChannelType="mono">
+						<masterclipid>masterclip-54</masterclipid>
+						<name>ZOOM0069_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>6070</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1545</start>
+						<end>1909</end>
+						<in>2016</in>
+						<out>2380</out>
+						<pproTicksIn>20483850240000</pproTicksIn>
+						<pproTicksOut>24182323200000</pproTicksOut>
+						<file id="file-54">
+							<name>ZOOM0069_Tr3.WAV</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Audio/Komal/ZOOM0069_Tr3.WAV</pathurl>
+							<rate>
+								<timebase>30</timebase>
+								<ntsc>TRUE</ntsc>
+							</rate>
+							<duration>7276</duration>
+							<timecode>
+								<rate>
+									<timebase>30</timebase>
+									<ntsc>TRUE</ntsc>
+								</rate>
+								<string>12;31;57;29</string>
+								<frame>1352187</frame>
+								<displayformat>DF</displayformat>
+							</timecode>
+							<media>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>1</channelcount>
+									<audiochannel>
+										<sourcechannel>1</sourcechannel>
+									</audiochannel>
+								</audio>
+							</media>
+						</file>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-205" premiereChannelType="mono">
+						<masterclipid>masterclip-54</masterclipid>
+						<name>ZOOM0069_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>6070</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>1909</start>
+						<end>2290</end>
+						<in>3829</in>
+						<out>4210</out>
+						<pproTicksIn>38905090560000</pproTicksIn>
+						<pproTicksOut>42776294400000</pproTicksOut>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-54" /></clipitem>
+					<clipitem id="clipitem-212" premiereChannelType="mono">
+						<masterclipid>masterclip-56</masterclipid>
+						<name>ZOOM0071_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>7804</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2290</start>
+						<end>2978</end>
+						<in>5181</in>
+						<out>5869</out>
+						<pproTicksIn>52642275840000</pproTicksIn>
+						<pproTicksOut>59632796160000</pproTicksOut>
+						<file id="file-56">
+							<name>ZOOM0071_Tr3.WAV</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Audio/Anay/ZOOM0071_Tr3.WAV</pathurl>
+							<rate>
+								<timebase>30</timebase>
+								<ntsc>TRUE</ntsc>
+							</rate>
+							<duration>9356</duration>
+							<timecode>
+								<rate>
+									<timebase>30</timebase>
+									<ntsc>TRUE</ntsc>
+								</rate>
+								<string>12;43;49;00</string>
+								<frame>1373496</frame>
+								<displayformat>DF</displayformat>
+							</timecode>
+							<media>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>1</channelcount>
+									<audiochannel>
+										<sourcechannel>1</sourcechannel>
+									</audiochannel>
+								</audio>
+							</media>
+						</file>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-228" premiereChannelType="mono">
+						<masterclipid>masterclip-58</masterclipid>
+						<name>ZOOM0073_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>7471</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>2978</start>
+						<end>3386</end>
+						<in>5150</in>
+						<out>5558</out>
+						<pproTicksIn>52327296000000</pproTicksIn>
+						<pproTicksOut>56472837120000</pproTicksOut>
+						<file id="file-58">
+							<name>ZOOM0073_Tr3.WAV</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Audio/Ana%20Sophia/ZOOM0073_Tr3.WAV</pathurl>
+							<rate>
+								<timebase>30</timebase>
+								<ntsc>TRUE</ntsc>
+							</rate>
+							<duration>8956</duration>
+							<timecode>
+								<rate>
+									<timebase>30</timebase>
+									<ntsc>TRUE</ntsc>
+								</rate>
+								<string>13;14;02;02</string>
+								<frame>1427832</frame>
+								<displayformat>DF</displayformat>
+							</timecode>
+							<media>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>1</channelcount>
+									<audiochannel>
+										<sourcechannel>1</sourcechannel>
+									</audiochannel>
+								</audio>
+							</media>
+						</file>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-235" premiereChannelType="mono">
+						<masterclipid>masterclip-59</masterclipid>
+						<name>ZOOM0074_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>28620</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3386</start>
+						<end>3766</end>
+						<in>17617</in>
+						<out>17997</out>
+						<pproTicksIn>178999994880000</pproTicksIn>
+						<pproTicksOut>182861038080000</pproTicksOut>
+						<file id="file-59">
+							<name>ZOOM0074_Tr3.WAV</name>
+							<pathurl>file://localhost/Volumes/DMD%20T9/TSS/2026/March%202026/2025.10.23_Dip%20of%20IT/RAW/Audio/Mikahail/ZOOM0074_Tr3.WAV</pathurl>
+							<rate>
+								<timebase>30</timebase>
+								<ntsc>TRUE</ntsc>
+							</rate>
+							<duration>34309</duration>
+							<timecode>
+								<rate>
+									<timebase>30</timebase>
+									<ntsc>TRUE</ntsc>
+								</rate>
+								<string>13;26;11;02</string>
+								<frame>1449680</frame>
+								<displayformat>DF</displayformat>
+							</timecode>
+							<media>
+								<audio>
+									<samplecharacteristics>
+										<depth>16</depth>
+										<samplerate>48000</samplerate>
+									</samplecharacteristics>
+									<channelcount>1</channelcount>
+									<audiochannel>
+										<sourcechannel>1</sourcechannel>
+									</audiochannel>
+								</audio>
+							</media>
+						</file>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					</clipitem>
+					<clipitem id="clipitem-242" premiereChannelType="mono">
+						<masterclipid>masterclip-56</masterclipid>
+						<name>ZOOM0071_Tr3.WAV</name>
+						<enabled>TRUE</enabled>
+						<duration>7804</duration>
+						<rate>
+							<timebase>25</timebase>
+							<ntsc>FALSE</ntsc>
+						</rate>
+						<start>3766</start>
+						<end>4186</end>
+						<in>7239</in>
+						<out>7659</out>
+						<pproTicksIn>73552872960000</pproTicksIn>
+						<pproTicksOut>77820341760000</pproTicksOut>
+						<sourcetrack>
+							<mediatype>audio</mediatype>
+							<trackindex>1</trackindex>
+						</sourcetrack>
+						<filter>
+							<effect>
+								<name>Audio Levels</name>
+								<effectid>audiolevels</effectid>
+								<effectcategory>audiolevels</effectcategory>
+								<effecttype>audiolevels</effecttype>
+								<mediatype>audio</mediatype>
+								<pproBypass>false</pproBypass>
+								<parameter authoringApp="PremierePro">
+									<parameterid>level</parameterid>
+									<name>Level</name>
+									<valuemin>0</valuemin>
+									<valuemax>3.98109</valuemax>
+									<value>1</value>
+								</parameter>
+							</effect>
+						</filter>
+						<logginginfo>
+							<description />
+							<scene />
+							<shottake />
+							<lognote />
+							<good />
+							<originalvideofilename />
+							<originalaudiofilename />
+						</logginginfo>
+						<colorinfo>
+							<lut />
+							<lut1 />
+							<asc_sop />
+							<asc_sat />
+							<lut2 />
+						</colorinfo>
+					<file id="file-56" /></clipitem>
+					</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="1" premiereTrackType="Mono">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>2</outputchannelindex>
+				</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="1" premiereTrackType="Mono">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>1</outputchannelindex>
+				</track>
+				<track TL.SQTrackAudioKeyframeStyle="0" TL.SQTrackShy="0" TL.SQTrackExpandedHeight="41" TL.SQTrackExpanded="0" MZ.TrackTargeted="1" PannerCurrentValue="0.5" PannerStartKeyframe="-91445760000000000,0.5,0,0,0,0,0,0" PannerName="Balance" currentExplodedTrackIndex="0" totalExplodedTrackCount="1" premiereTrackType="Mono">
+					<enabled>TRUE</enabled>
+					<locked>FALSE</locked>
+					<outputchannelindex>2</outputchannelindex>
+				</track>
+			</audio>
+		</media>
+		<timecode>
+			<rate>
+				<timebase>25</timebase>
+				<ntsc>FALSE</ntsc>
+			</rate>
+			<string>00:00:00:00</string>
+			<frame>0</frame>
+			<displayformat>NDF</displayformat>
+		</timecode>
+			<marker>
+				<comment />
+				<name>pluraleyes 000</name>
+				<in>0</in>
+				<out>-1</out>
+			</marker>
+		<labels>
+			<label2>Forest</label2>
+		</labels>
+		<logginginfo>
+			<description />
+			<scene />
+			<shottake />
+			<lognote />
+			<good />
+			<originalvideofilename />
+			<originalaudiofilename />
+		</logginginfo>
+	</sequence>
+</xmeml>

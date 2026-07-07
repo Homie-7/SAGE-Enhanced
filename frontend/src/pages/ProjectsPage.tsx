@@ -1,28 +1,39 @@
 /**
- * Project list + create.
- *
- * Managed service: standard users never see provider choice — projects run
- * on the centrally hosted provider (VAL in production). When the backend is
- * deployed in admin/dev mode (/api/meta), a clearly labelled admin selector
- * appears; the backend enforces this server-side regardless.
+ * Home: project list + create. Standard users see no provider machinery;
+ * the admin selector appears only when /api/meta reports admin mode and
+ * stays visually secondary. Backend enforces regardless.
  */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createProject, getMeta, listProjects, phaseRoute } from "../api/client";
-import type { AppMeta } from "../api/client";
+import { createProject, getAdminStatus, getMeta, listProjects, phaseRoute } from "../api/client";
+import type { AdminStatus, AppMeta } from "../api/client";
+import { Shell } from "../components/Shell";
 import type { Project } from "../types/state";
 
+const PHASE_LABEL: Record<string, string> = {
+  created: "Awaiting upload", inputs_uploaded: "Awaiting setup",
+  setup_complete: "Ready to plan", analysing: "Planning",
+  paper_edit_ready: "Ready for review", in_review: "In review",
+  revising: "Revising", approved: "Approved",
+  rebuilding: "Rebuilding", validating: "Validating",
+  complete: "Complete", failed: "Needs attention",
+};
+
 export function ProjectsPage() {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<Project[] | null>(null);
   const [meta, setMeta] = useState<AppMeta>({ admin_mode: false });
+  const [status, setStatus] = useState<AdminStatus | null>(null);
   const [name, setName] = useState("");
   const [provider, setProvider] = useState("");
   const [error, setError] = useState("");
   const nav = useNavigate();
 
   useEffect(() => {
-    listProjects().then(setProjects).catch(e => setError(String(e)));
-    getMeta().then(setMeta).catch(() => { /* standard mode */ });
+    listProjects().then(setProjects).catch(e => { setProjects([]); setError(String(e)); });
+    getMeta().then(m => {
+      setMeta(m);
+      if (m.admin_mode) getAdminStatus().then(setStatus).catch(() => {});
+    }).catch(() => { /* standard mode */ });
   }, []);
 
   const create = async () => {
@@ -34,38 +45,99 @@ export function ProjectsPage() {
   };
 
   return (
-    <main>
-      <h1>SAGE — Projects</h1>
-      <p>
-        <input value={name} onChange={e => setName(e.target.value)}
-               placeholder="Project name"
-               onKeyDown={e => e.key === "Enter" && create()} />
-        {" "}
-        {meta.admin_mode && (
-          <label>
-            <strong>[admin]</strong> provider:{" "}
-            <select value={provider} onChange={e => setProvider(e.target.value)}>
+    <Shell adminMode={meta.admin_mode}>
+      <h1>Projects</h1>
+      <p className="page-sub">Each project takes one recorded interview from
+        source timeline to an edited sequence, with your approval in the middle.</p>
+
+      <div className="panel">
+        <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+          <input
+            value={name}
+            onChange={e => setName(e.target.value)}
+            onKeyDown={e => e.key === "Enter" && create()}
+            placeholder="New project name"
+            aria-label="New project name"
+            style={{ flex: "1 1 260px" }}
+          />
+          <button className="btn btn-primary" onClick={create} disabled={!name.trim()}>
+            Create project
+          </button>
+        </div>
+      </div>
+
+      {meta.admin_mode && (
+        <section className="admin-panel" aria-label="Provider testing (admin)">
+          <h2>Provider testing — admin only</h2>
+          {status && Object.entries(status.providers).map(([name, p]) => (
+            <div key={name} className="provider-row">
+              <span className="name">{name}</span>
+              <span className={"pill " + (p.ready ? "ok" : "warn")}>
+                {p.ready ? "ready" : "not configured"}
+              </span>
+              {p.is_default && <span className="pill">default</span>}
+              <span className="detail" title={p.detail}>{p.detail}</span>
+            </div>
+          ))}
+          <div className="provider-row" style={{ marginTop: 8 }}>
+            <span className="name">new</span>
+            <span className="small dim">Run new projects on</span>
+            <select value={provider} onChange={e => setProvider(e.target.value)}
+                    style={{ maxWidth: 220 }} aria-label="Provider for new projects">
               <option value="">default ({meta.default_provider})</option>
               {meta.available_providers?.map(v => <option key={v} value={v}>{v}</option>)}
-            </select>{" "}
-          </label>
+            </select>
+          </div>
+          <p className="small faint" style={{ margin: "10px 0 0" }}>
+            Recorded per project. Standard deployments never show this panel;
+            the server refuses provider selection outside admin mode.
+          </p>
+        </section>
+      )}
+
+      {error && <div className="alert danger"><p>{error}</p></div>}
+
+      <div className="section">
+        {projects === null ? (
+          <div className="empty"><div className="mark">···</div>Loading projects</div>
+        ) : projects.length === 0 ? (
+          <div className="empty">
+            <div className="mark">SAGE</div>
+            No projects yet. Create one above to start a cut.
+          </div>
+        ) : (
+          <div className="table-wrap">
+            <table className="sys">
+              <thead>
+                <tr><th>Name</th><th>Status</th>
+                    {meta.admin_mode && <th>Provider</th>}
+                    <th>Updated</th></tr>
+              </thead>
+              <tbody>
+                {projects.map(p => (
+                  <tr key={p.meta.id} className="row-link"
+                      onClick={() => nav(phaseRoute(p))}>
+                    <td>{p.meta.name}</td>
+                    <td>
+                      <span className={"pill " +
+                        (p.meta.phase === "complete" ? "ok"
+                         : p.meta.phase === "failed" ? "danger"
+                         : ["analysing", "rebuilding", "validating"].includes(p.meta.phase)
+                           ? "active" : "")}>
+                        {PHASE_LABEL[p.meta.phase] ?? p.meta.phase}
+                      </span>
+                    </td>
+                    {meta.admin_mode && <td className="mono dim">{p.meta.provider}</td>}
+                    <td className="dim small">
+                      {new Date(p.meta.updated_at).toLocaleString()}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
-        <button onClick={create}>Create project</button>
-      </p>
-      {error && <p role="alert">{error}</p>}
-      <table>
-        <thead><tr><th>Name</th><th>Phase</th>{meta.admin_mode && <th>Provider</th>}<th>Updated</th></tr></thead>
-        <tbody>
-          {projects.map(p => (
-            <tr key={p.meta.id} onClick={() => nav(phaseRoute(p))} style={{ cursor: "pointer" }}>
-              <td>{p.meta.name}</td>
-              <td>{p.meta.phase}</td>
-              {meta.admin_mode && <td>{p.meta.provider}</td>}
-              <td>{new Date(p.meta.updated_at).toLocaleString()}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </main>
+      </div>
+    </Shell>
   );
 }

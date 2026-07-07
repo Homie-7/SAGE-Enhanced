@@ -1,0 +1,25 @@
+{
+  "changed_beats": [
+    {
+      "bid": "B7",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "reflection",
+      "quote_stub": "SARAH CHEN: What I've \u2026 already belongs to them.",
+      "est_duration": 30.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "Tightened reflection per revision request",
+      "uncertainty_labels": [],
+      "status": "candidate",
+      "seg_ids": [
+        "S12"
+      ]
+    }
+  ],
+  "reason": "Tightened B7 (reflection) as requested; no other beats touched.",
+  "runtime_effect": "-5s approx",
+  "contributor_effect": "none",
+  "risk_effect": "none"
+}

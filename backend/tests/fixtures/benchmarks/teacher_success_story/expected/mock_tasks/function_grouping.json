@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "func": "hook",
+      "seg_ids": [
+        "S3"
+      ],
+      "note": "Value-first opening moment"
+    },
+    {
+      "func": "context",
+      "seg_ids": [
+        "S4"
+      ],
+      "note": null
+    },
+    {
+      "func": "problem",
+      "seg_ids": [
+        "S6"
+      ],
+      "note": null
+    },
+    {
+      "func": "process",
+      "seg_ids": [
+        "S7"
+      ],
+      "note": null
+    },
+    {
+      "func": "example",
+      "seg_ids": [
+        "S8"
+      ],
+      "note": null
+    },
+    {
+      "func": "evidence",
+      "seg_ids": [
+        "S10"
+      ],
+      "note": null
+    },
+    {
+      "func": "reflection",
+      "seg_ids": [
+        "S12"
+      ],
+      "note": null
+    },
+    {
+      "func": "closing",
+      "seg_ids": [
+        "S13"
+      ],
+      "note": "Strongest resolved line"
+    },
+    {
+      "func": "exclude",
+      "seg_ids": [
+        "S1",
+        "S2",
+        "S5",
+        "S9",
+        "S11",
+        "S14"
+      ],
+      "note": "Interviewer prompts, false start, tangent"
+    }
+  ]
+}

@@ -31,9 +31,24 @@ class RetryConfig(BaseModel):
     repair_prompt: bool = True
 
 
+class EndpointConfig(BaseModel):
+    """Transport facts for HTTP providers. All optional so configs without
+    endpoints (mock) stay valid; adapters fail precisely when required
+    fields are missing."""
+    base_url: str | None = None
+    api_style: str | None = None  # "openai_chat" | "anthropic_messages"
+    auth_env: str | None = None   # env var holding the server-side credential
+    auth_header: str = "Authorization"
+    auth_scheme: str | None = "Bearer"  # None = raw value in header
+    timeout_seconds: float = 120.0
+    transport_retries: int = 1  # retries on transport errors only, never on
+                                # invalid content (that is the repair round's job)
+
+
 class ProviderCapabilities(BaseModel):
     provider: str
     model: str | None = None
+    endpoint: EndpointConfig = Field(default_factory=EndpointConfig)
     max_context_tokens: int = 32000
     max_output_tokens: int = 4000
     supports_system_prompt: bool = True
@@ -55,4 +70,10 @@ class ProviderAdapter(Protocol):
         """Execute one stateless task. Must return a TaskResult whose
         `parsed` is schema-valid JSON or whose `error` explains exactly
         why not (canonical failure rule: no vague language)."""
+        ...
+
+    def readiness(self) -> tuple[bool, str]:
+        """Cheap, local, no-network answer to: could run_task possibly
+        succeed right now? (config + credential presence). Used by the
+        operator status endpoint and pre-flight checks."""
         ...

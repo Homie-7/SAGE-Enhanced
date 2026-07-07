@@ -1,8 +1,18 @@
-/** Poll while the canonical planning pipeline runs; route on when done. */
+/** Step 3 — planning runs in the background; this page keeps calm and polls. */
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getProject, phaseRoute } from "../api/client";
+import { Shell } from "../components/Shell";
 import type { Project } from "../types/state";
+
+const PIPELINE = [
+  "Audit the source timeline",
+  "Identify contributors",
+  "Classify the material",
+  "Group by function",
+  "Choose mode and structure",
+  "Draft the paper edit",
+];
 
 export function ProcessingPage() {
   const { id = "" } = useParams();
@@ -24,11 +34,16 @@ export function ProcessingPage() {
   }, [id, nav]);
 
   return (
-    <main>
-      <h1>Planning in progress</h1>
-      <p>Phase: {project?.meta.phase ?? "…"}</p>
-      <p>Running the canonical pipeline: audit → roster → classification →
-        grouping → mode/structure → paper edit.</p>
-    </main>
+    <Shell project={project}>
+      <h1>Planning the cut</h1>
+      <p className="page-sub">SAGE is reading the timeline and transcript.
+        This can take a few minutes; the page moves on by itself.</p>
+      <div className="panel">
+        <div className="sweep" role="progressbar" aria-label="Planning in progress" />
+        <ul className="task-list">
+          {PIPELINE.map(step => <li key={step}>{step}</li>)}
+        </ul>
+      </div>
+    </Shell>
   );
 }

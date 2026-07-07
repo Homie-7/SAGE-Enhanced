@@ -1,0 +1,178 @@
+{
+  "case_id": "tss",
+  "sources": {
+    "main": {
+      "feasibility": {
+        "source_id": "main",
+        "items": [
+          {
+            "name": "frame_rate",
+            "ok": true,
+            "detail": "25.0 fps (ntsc=False), xmeml v5"
+          },
+          {
+            "name": "single_source_scope",
+            "ok": true,
+            "detail": "15 media file(s) across V1/A2. V1 rebuilds from ONE source timeline; multiple media files mean the LLM's plan and the deterministic rebuild must stay within spans this timeline actually contains \u2014 verified per beat at rebuild time, but cross-media storytelling like the human final is out of V1 scope."
+          },
+          {
+            "name": "clip_timing",
+            "ok": true,
+            "detail": "All clipitems carry numeric timing."
+          },
+          {
+            "name": "transcript_alignment",
+            "ok": false,
+            "detail": "Transcript extends to 4537s but the timeline is 2022s \u2014 the transcript belongs to a different/longer sequence. Time-based span mapping against this XML is unreliable; obtain the matching sequence export or a re-synced transcript before a live SAGE run on this source."
+          },
+          {
+            "name": "speaker_identification",
+            "ok": true,
+            "detail": "0/81 speakers carry real names; the rest will surface as IDENTITY_UNCERTAIN in the roster (canonical behaviour)."
+          }
+        ],
+        "provider_fit": {
+          "claude": "~15505 transcript tokens (chars/4 estimate) vs 180000 context: fits single-pass.",
+          "mock": "~15505 transcript tokens (chars/4 estimate) vs 1000000 context: fits single-pass.",
+          "val": "~15505 transcript tokens (chars/4 estimate) vs 16000 context: DOES NOT FIT single-pass (short by ~2505); V1 has no chunking \u2014 run fails explicitly."
+        },
+        "overall_ok": false
+      },
+      "human_baseline": {
+        "reference": "/home/claude/sage/sage-internal/backend/benchmarks/cases/tss/inputs/reference_after.xml",
+        "candidate": "/home/claude/sage/sage-internal/backend/benchmarks/cases/tss/inputs/main_before.xml",
+        "mediatype": "audio",
+        "shared_media": [
+          "0h5a3089.mp4",
+          "0h5a3093.mp4",
+          "0h5a3095.mp4",
+          "0h5a3097.mp4",
+          "0h5a3098.mp4",
+          "0u3a3112.mp4",
+          "0u3a3116.mp4",
+          "0u3a3118.mp4",
+          "0u3a3120.mp4",
+          "0u3a3121.mp4"
+        ],
+        "reference_only_media": [
+          "0u3a3170.mp4",
+          "0u3a3171.mp4",
+          "0u3a3172.mp4",
+          "zoom0065_tr3.wav",
+          "zoom0069_tr3.wav",
+          "zoom0071_tr3.wav",
+          "zoom0073_tr3.wav",
+          "zoom0074_tr3.wav"
+        ],
+        "candidate_only_media": [
+          "0h5a3094.mp4",
+          "0h5a3096.mp4",
+          "0u3a3117.mp4",
+          "0u3a3119.mp4",
+          "0u3a3122.mp4"
+        ],
+        "reference_runtime_s": 167.44,
+        "candidate_runtime_s": 2021.68,
+        "reference_kept_s": 334.88,
+        "candidate_kept_s": 1428.76,
+        "overlap_s": 167.44,
+        "recall": 0.5,
+        "precision": 0.117,
+        "jaccard": 0.105,
+        "order_similarity": 0.956,
+        "reference_shots": 40,
+        "candidate_shots": 79,
+        "reference_avg_shot_s": 8.37,
+        "candidate_avg_shot_s": 18.09,
+        "divergences": [
+          {
+            "media_key": "0h5a3098.mp4",
+            "source_in_s": 451.84,
+            "source_out_s": 551.84,
+            "duration_s": 100.0,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3097.mp4",
+            "source_in_s": 208.88,
+            "source_out_s": 287.32,
+            "duration_s": 78.44,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3098.mp4",
+            "source_in_s": 174.84,
+            "source_out_s": 252.12,
+            "duration_s": 77.28,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3093.mp4",
+            "source_in_s": 169.08,
+            "source_out_s": 238.16,
+            "duration_s": 69.08,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3093.mp4",
+            "source_in_s": 95.88,
+            "source_out_s": 153.84,
+            "duration_s": 57.96,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3098.mp4",
+            "source_in_s": 622.44,
+            "source_out_s": 680.12,
+            "duration_s": 57.68,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3098.mp4",
+            "source_in_s": 822.8,
+            "source_out_s": 871.6,
+            "duration_s": 48.8,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3098.mp4",
+            "source_in_s": 735.08,
+            "source_out_s": 783.04,
+            "duration_s": 47.96,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3089.mp4",
+            "source_in_s": 19.56,
+            "source_out_s": 67.44,
+            "duration_s": 47.88,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          },
+          {
+            "media_key": "0h5a3097.mp4",
+            "source_in_s": 91.72,
+            "source_out_s": 138.44,
+            "duration_s": 46.72,
+            "kept_by": "candidate_only",
+            "transcript_excerpt": null
+          }
+        ],
+        "limits": [
+          "Media matched by file name; renamed/re-exported media reports as unshared.",
+          "Measures which source material was kept, not trims, mix, grade, b-roll placement, music, or multi-track craft.",
+          "Numbers locate differences for human review; they do not grade the edit."
+        ]
+      }
+    }
+  },
+  "human_baseline": null
+}

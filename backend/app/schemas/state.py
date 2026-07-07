@@ -211,6 +211,9 @@ class InputFile(BaseModel):
     stored_path: str
     checksum_sha256: str
     uploaded_at: datetime = Field(default_factory=_now)
+    # Set when ingest transformed the file (e.g. word-timed JSON transcript
+    # normalized to SAGE text) so the person can see what happened.
+    ingest_note: str | None = None
 
 
 class SourceAudit(BaseModel):

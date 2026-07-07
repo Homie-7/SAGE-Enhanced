@@ -52,3 +52,8 @@ class MockProvider:
             parsed=payload,
             valid=True,
         )
+
+    def readiness(self) -> tuple[bool, str]:
+        ok = self._fixture_dir is not None
+        return ok, (f"Mock fixtures at {self._fixture_dir}" if ok
+                    else "Mock provider has no fixture directory configured.")

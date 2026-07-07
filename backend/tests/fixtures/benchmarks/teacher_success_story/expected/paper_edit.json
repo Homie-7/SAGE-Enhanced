@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "beats": [
+    {
+      "bid": "B1",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "hook",
+      "quote_stub": "SARAH CHEN: The moment I \u2026 was in that one minute.",
+      "est_duration": 19.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "Value-first opening: the moment of change",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S3"
+      ]
+    },
+    {
+      "bid": "B2",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "context",
+      "quote_stub": "SARAH CHEN: I'm Sarah Chen, \u2026 of programs come and go.",
+      "est_duration": 28.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "Who Sarah is and where; grounds the story",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S4"
+      ]
+    },
+    {
+      "bid": "B3",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "problem",
+      "quote_stub": "SARAH CHEN: Before this year, \u2026 it's very hard to undo.",
+      "est_duration": 37.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "The students who had given up",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S6"
+      ]
+    },
+    {
+      "bid": "B4",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "process",
+      "quote_stub": "SARAH CHEN: So what we \u2026 already owned in their heads.",
+      "est_duration": 45.0,
+      "boundary_status": "tight-out",
+      "confidence": "high",
+      "include_reason": "The flip: their own stories become the books",
+      "uncertainty_labels": [
+        "SENTENCE_SEAM_RISK"
+      ],
+      "status": "locked",
+      "seg_ids": [
+        "S7"
+      ]
+    },
+    {
+      "bid": "B5",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "example",
+      "quote_stub": "SARAH CHEN: There's one student, \u2026 little sister at bedtime now.",
+      "est_duration": 40.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "M's story \u2014 concrete, emotional proof",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S8"
+      ]
+    },
+    {
+      "bid": "B6",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "evidence",
+      "quote_stub": "SARAH CHEN: We did, and \u2026 group, is now our best.",
+      "est_duration": 34.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "Fourteen months average gain; attendance turnaround",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S10"
+      ]
+    },
+    {
+      "bid": "B7",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "reflection",
+      "quote_stub": "SARAH CHEN: What I've learned \u2026 reading already belongs to them.",
+      "est_duration": 35.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "The barrier was belief, not ability",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S12"
+      ]
+    },
+    {
+      "bid": "B8",
+      "src": "SRC1",
+      "cid": "C1",
+      "role": "Teacher",
+      "func": "closing",
+      "quote_stub": "SARAH CHEN: People ask me \u2026 program. That's a changed life.",
+      "est_duration": 35.0,
+      "boundary_status": "clean",
+      "confidence": "high",
+      "include_reason": "Strongest resolved close: the book club",
+      "uncertainty_labels": [],
+      "status": "locked",
+      "seg_ids": [
+        "S13"
+      ]
+    }
+  ]
+}

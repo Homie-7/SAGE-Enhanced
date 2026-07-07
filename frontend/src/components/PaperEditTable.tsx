@@ -1,11 +1,9 @@
 /**
- * Canonical Paper Edit Table (file 03): BID, src, CID, role, func, quote,
- * dur, boundary, conf, why_keep, status — with per-beat lock / reject /
- * reopen controls. Uncertainty labels shown verbatim, never hidden.
+ * The cutting log — canonical Paper Edit Table (file 03).
+ * Locked beats carry a red left rule (the commitment mark); rejected beats
+ * dim and strike. Uncertainty labels are shown verbatim, never hidden.
  */
 import type { Beat } from "../types/state";
-
-const RISKY = new Set(["IDENTITY_UNCERTAIN", "SENTENCE_SEAM_RISK", "CONTINUITY_RISK", "BALANCE_RISK"]);
 
 export function PaperEditTable({ beats, onStatus, readOnly }: {
   beats: Beat[];
@@ -13,47 +11,60 @@ export function PaperEditTable({ beats, onStatus, readOnly }: {
   readOnly?: boolean;
 }) {
   return (
-    <table border={1} cellPadding={4} style={{ borderCollapse: "collapse" }}>
-      <thead>
-        <tr>
-          <th>BID</th><th>CID</th><th>Function</th><th>Quote</th><th>~s</th>
-          <th>Boundary</th><th>Conf</th><th>Why keep</th><th>Flags</th><th>Status</th>
-          {!readOnly && <th>Actions</th>}
-        </tr>
-      </thead>
-      <tbody>
-        {beats.map(b => (
-          <tr key={b.bid} style={b.status === "rejected" ? { opacity: 0.45, textDecoration: "line-through" } : undefined}>
-            <td>{b.bid}</td>
-            <td>{b.cid ?? "—"}</td>
-            <td>{b.func}</td>
-            <td style={{ maxWidth: 340 }}>{b.exact_quote ?? b.quote_stub ?? "—"}</td>
-            <td>{b.est_duration ?? "—"}</td>
-            <td>{b.boundary_status ?? "—"}</td>
-            <td>{b.confidence ?? "—"}</td>
-            <td style={{ maxWidth: 220 }}>{b.include_reason ?? "—"}</td>
-            <td>
-              {b.uncertainty_labels.map(l => (
-                <div key={l} style={RISKY.has(l) ? { fontWeight: "bold" } : undefined}>⚠ {l}</div>
-              ))}
-            </td>
-            <td><strong>{b.status}</strong></td>
-            {!readOnly && (
-              <td>
-                {b.status !== "locked" && b.status !== "rejected" && (
-                  <>
-                    <button onClick={() => onStatus?.(b.bid, "locked")}>Lock</button>{" "}
-                    <button onClick={() => onStatus?.(b.bid, "rejected")}>Reject</button>
-                  </>
-                )}
-                {(b.status === "locked" || b.status === "rejected") && (
-                  <button onClick={() => onStatus?.(b.bid, "candidate")}>Reopen</button>
-                )}
-              </td>
-            )}
+    <div className="table-wrap">
+      <table className="sys">
+        <thead>
+          <tr>
+            <th>Beat</th><th>Speaker</th><th>Function</th><th>Quote</th>
+            <th>Est.</th><th>Confidence</th><th>Why keep</th><th>Flags</th>
+            <th>Status</th>
+            {!readOnly && <th>Actions</th>}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {beats.map(b => (
+            <tr key={b.bid}
+                className={b.status === "locked" ? "beat-locked"
+                         : b.status === "rejected" ? "beat-rejected" : ""}>
+              <td className="mono">{b.bid}</td>
+              <td className="mono dim">{b.cid ?? "—"}</td>
+              <td className="dim">{b.func}</td>
+              <td className="quote">{b.exact_quote ?? b.quote_stub ?? "—"}</td>
+              <td className="mono dim">{b.est_duration != null ? `${b.est_duration}s` : "—"}</td>
+              <td className="dim small">{b.confidence ?? "—"}</td>
+              <td className="why">{b.include_reason ?? "—"}</td>
+              <td>
+                {b.uncertainty_labels
+                  .filter(l => l !== "HIGH_CONFIDENCE")
+                  .map(l => <span key={l} className="flag">▲ {l}</span>)}
+                {b.uncertainty_labels.every(l => l === "HIGH_CONFIDENCE") &&
+                  <span className="faint">—</span>}
+              </td>
+              <td className="mono small"
+                  style={b.status === "locked" ? { color: "var(--red-hover)" } : undefined}>
+                {b.status}
+              </td>
+              {!readOnly && (
+                <td>
+                  <div className="beat-actions">
+                    {b.status !== "locked" && b.status !== "rejected" ? (
+                      <>
+                        <button className="btn btn-secondary"
+                                onClick={() => onStatus?.(b.bid, "locked")}>Lock</button>
+                        <button className="btn btn-quiet-danger"
+                                onClick={() => onStatus?.(b.bid, "rejected")}>Reject</button>
+                      </>
+                    ) : (
+                      <button className="btn btn-ghost"
+                              onClick={() => onStatus?.(b.bid, "candidate")}>Reopen</button>
+                    )}
+                  </div>
+                </td>
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

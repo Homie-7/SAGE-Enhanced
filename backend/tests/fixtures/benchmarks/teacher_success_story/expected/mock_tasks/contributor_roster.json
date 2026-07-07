@@ -1,0 +1,24 @@
+{
+  "contributors": [
+    {
+      "cid": "C1",
+      "label": "Sarah Chen",
+      "role": "Teacher, Year 5, Westbrook Primary",
+      "source": "SRC1",
+      "confidence": "high",
+      "status": "keep",
+      "value_note": "Sole on-camera voice; carries the whole story",
+      "ambiguity_note": null
+    },
+    {
+      "cid": "C2",
+      "label": "Interviewer",
+      "role": "Off-mic interviewer",
+      "source": "SRC1",
+      "confidence": "high",
+      "status": "exclude",
+      "value_note": "Prompts only; never in the cut",
+      "ambiguity_note": null
+    }
+  ]
+}

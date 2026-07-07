@@ -10,12 +10,17 @@ Responsibilities:
 
 from __future__ import annotations
 
+import logging
+import time
+
 from typing import Type
 
 from pydantic import BaseModel, ValidationError
 
 from app.providers.base import ProviderAdapter
 from app.schemas.tasks import TaskSpec, TaskResult
+
+logger = logging.getLogger("sage.tasks")
 
 
 def _validate(result: TaskResult, output_model: Type[BaseModel]) -> BaseModel | None:
@@ -58,18 +63,32 @@ async def run_validated(
     """Run a task and validate its output. One bounded repair round if the
     provider's capabilities allow. Returns the raw result plus the validated
     model (or None, with result.error set honestly)."""
+    t0 = time.monotonic()
     result = await adapter.run_task(task)
     model = _validate(result, output_model)
     if model is not None:
+        logger.info("task=%s provider=%s ok in %.1fs (in=%d out=%d tokens)",
+                    task.task_name, adapter.name, time.monotonic() - t0,
+                    result.usage.input_tokens, result.usage.output_tokens)
         return result, model
 
     retry = adapter.capabilities.retry
     if retry.repair_prompt and retry.max_attempts >= 2:
+        logger.warning("task=%s provider=%s invalid, repair round: %s",
+                       task.task_name, adapter.name, (result.error or "")[:200])
         repair_result = await adapter.run_task(_repair_spec(task, result))
         repair_result.repair_attempted = True
         model = _validate(repair_result, output_model)
         if model is None and repair_result.error is None:
             repair_result.error = result.error
+        logger.log(logging.INFO if model is not None else logging.ERROR,
+                   "task=%s provider=%s repair %s in %.1fs total",
+                   task.task_name, adapter.name,
+                   "succeeded" if model is not None else
+                   f"failed: {(repair_result.error or '')[:200]}",
+                   time.monotonic() - t0)
         return repair_result, model
 
+    logger.error("task=%s provider=%s failed (no repair round): %s",
+                 task.task_name, adapter.name, (result.error or "")[:200])
     return result, None

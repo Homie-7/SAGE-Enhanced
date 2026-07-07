@@ -1,0 +1,25 @@
+{
+  "label": "stage7-preflight",
+  "at": "2026-07-07T12:37:25.604656+00:00",
+  "intent": "First live-provider benchmark attempt on LND (VAL first, Claude fallback).",
+  "providers": {
+    "val": {
+      "ready": false,
+      "detail": "VAL not configured \u2014 missing: endpoint.base_url in prompts/configs/val.json; endpoint.api_style in prompts/configs/val.json (one of ('openai_chat', 'anthropic_messages')); model in prompts/configs/val.json; server-side credential (env VAL_API_KEY)"
+    },
+    "claude": {
+      "ready": false,
+      "detail": "Claude fallback not configured \u2014 missing server-side credential (env ANTHROPIC_API_KEY)."
+    },
+    "mock": {
+      "ready": true,
+      "detail": "Mock fixtures at /home/claude/sage/sage-internal/backend/tests/fixtures/benchmarks/teacher_success_story/expected/mock_tasks"
+    }
+  },
+  "real_export_rebuild_probes": {
+    "benchmarks/cases/lnd_showcase/inputs/electrotech_before.xml": "PASS (integrity suite green; import_safety WARN by design)",
+    "benchmarks/cases/lnd_showcase/inputs/interior_design_before.xml": "PASS (integrity suite green; import_safety WARN by design)",
+    "benchmarks/cases/tss/inputs/main_before.xml": "PASS (integrity suite green; import_safety WARN by design)"
+  },
+  "outcome": "NO LIVE RUN POSSIBLE in this environment: VAL gateway/credential not yet supplied; ANTHROPIC_API_KEY not present. Both attempts failed fast at the readiness gate with exact missing facts; no state was created. Deterministic pipeline validated against all three real Premiere exports instead (see probes)."
+}

@@ -34,6 +34,17 @@ export interface AppMeta {
 }
 
 export const getMeta = () => req<AppMeta>("/meta");
+
+export interface AdminStatus {
+  ok: boolean;
+  default_provider: string;
+  providers: Record<string, { ready: boolean; detail: string; is_default: boolean }>;
+  database: { writable: boolean; detail: string };
+  artefacts: { writable: boolean; path: string };
+  canonical_prompts: { present: boolean; path: string };
+}
+/** Admin/dev deployments only; 403 otherwise. */
+export const getAdminStatus = () => req<AdminStatus>("/admin/status");
 export const listProjects = () => req<Project[]>("/projects");
 export const getProject = (id: string) => req<Project>(`/projects/${id}`);
 export const createProject = (name: string, provider?: string) =>

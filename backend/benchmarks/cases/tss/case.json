@@ -1,0 +1,20 @@
+{
+  "case_id": "tss",
+  "title": "Teacher Success Story (real)",
+  "content_stream": "TSS",
+  "created_at": "2026-07-07T12:04:10.582879Z",
+  "sources": [
+    {
+      "source_id": "main",
+      "before_xml": "inputs/main_before.xml",
+      "transcript_json": "inputs/main_transcript.json",
+      "label": "main"
+    }
+  ],
+  "reference_after_xml": "inputs/reference_after.xml",
+  "notes": null,
+  "mock_fixture_dir": null,
+  "caveats": [
+    "source 'main': Transcript extends to 4537s but the timeline is 2022s — the transcript belongs to a different/longer sequence. Time-based span mapping against this XML is unreliable; obtain the matching sequence export or a re-synced transcript before a live SAGE run on this source."
+  ]
+}

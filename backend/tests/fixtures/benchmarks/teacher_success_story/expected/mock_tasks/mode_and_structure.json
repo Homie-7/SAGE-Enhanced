@@ -1,0 +1,19 @@
+{
+  "mode": "narrative",
+  "rationale": "Single-contributor testimonial with a clear arc: hook, context, problem, process, example, evidence, close. Preset 1 territory: warm tone, value-first opening, end on the strongest resolved line.",
+  "proposed_order": [
+    "hook",
+    "context",
+    "problem",
+    "process",
+    "example",
+    "evidence",
+    "reflection",
+    "closing"
+  ],
+  "exclusions": [
+    "interviewer prompts",
+    "false start",
+    "beanbag tangent"
+  ]
+}

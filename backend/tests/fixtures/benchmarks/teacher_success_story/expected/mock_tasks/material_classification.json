@@ -1,0 +1,214 @@
+{
+  "segments": [
+    {
+      "seg_id": "S1",
+      "source": "SRC1",
+      "transcript_span": [
+        0,
+        111
+      ],
+      "time_span": [
+        2.0,
+        8.0
+      ],
+      "label": "contamination",
+      "cid": "C2",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S2",
+      "source": "SRC1",
+      "transcript_span": [
+        113,
+        222
+      ],
+      "time_span": [
+        8.0,
+        15.0
+      ],
+      "label": "false_start",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S3",
+      "source": "SRC1",
+      "transcript_span": [
+        224,
+        495
+      ],
+      "time_span": [
+        15.0,
+        34.0
+      ],
+      "label": "keeper",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S4",
+      "source": "SRC1",
+      "transcript_span": [
+        497,
+        782
+      ],
+      "time_span": [
+        34.0,
+        62.0
+      ],
+      "label": "setup",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S5",
+      "source": "SRC1",
+      "transcript_span": [
+        784,
+        867
+      ],
+      "time_span": [
+        62.0,
+        68.0
+      ],
+      "label": "contamination",
+      "cid": "C2",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S6",
+      "source": "SRC1",
+      "transcript_span": [
+        869,
+        1221
+      ],
+      "time_span": [
+        68.0,
+        105.0
+      ],
+      "label": "setup",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S7",
+      "source": "SRC1",
+      "transcript_span": [
+        1223,
+        1681
+      ],
+      "time_span": [
+        105.0,
+        150.0
+      ],
+      "label": "process",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S8",
+      "source": "SRC1",
+      "transcript_span": [
+        1683,
+        2073
+      ],
+      "time_span": [
+        150.0,
+        190.0
+      ],
+      "label": "example",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S9",
+      "source": "SRC1",
+      "transcript_span": [
+        2075,
+        2165
+      ],
+      "time_span": [
+        190.0,
+        196.0
+      ],
+      "label": "contamination",
+      "cid": "C2",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S10",
+      "source": "SRC1",
+      "transcript_span": [
+        2167,
+        2516
+      ],
+      "time_span": [
+        196.0,
+        230.0
+      ],
+      "label": "evidence",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S11",
+      "source": "SRC1",
+      "transcript_span": [
+        2518,
+        2771
+      ],
+      "time_span": [
+        230.0,
+        260.0
+      ],
+      "label": "filler",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S12",
+      "source": "SRC1",
+      "transcript_span": [
+        2773,
+        3129
+      ],
+      "time_span": [
+        260.0,
+        295.0
+      ],
+      "label": "reflection",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S13",
+      "source": "SRC1",
+      "transcript_span": [
+        3131,
+        3455
+      ],
+      "time_span": [
+        295.0,
+        330.0
+      ],
+      "label": "close",
+      "cid": "C1",
+      "confidence": "high"
+    },
+    {
+      "seg_id": "S14",
+      "source": "SRC1",
+      "transcript_span": [
+        3457,
+        3556
+      ],
+      "time_span": [
+        330.0,
+        348.0
+      ],
+      "label": "contamination",
+      "cid": "C2",
+      "confidence": "high"
+    }
+  ]
+}

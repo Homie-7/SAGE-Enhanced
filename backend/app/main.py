@@ -5,7 +5,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import outputs, phases, projects, review, uploads
+from app.api import admin, outputs, phases, projects, review, uploads
 
 app = FastAPI(
     title="SAGE Internal V1",
@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-for router_module in (projects, uploads, phases, review, outputs):
+for router_module in (projects, uploads, phases, review, outputs, admin):
     app.include_router(router_module.router)
 
 

@@ -1,0 +1,15 @@
+{
+  "expected_clip_count_video": 8,
+  "expected_beat_order": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+  ],
+  "frame_rate": 25,
+  "max_total_duration_seconds": 300
+}

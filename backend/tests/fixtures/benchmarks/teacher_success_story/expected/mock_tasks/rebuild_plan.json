@@ -1,0 +1,126 @@
+{
+  "plan": {
+    "style": "B",
+    "mappings": [
+      {
+        "bid": "B1",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 15.0,
+        "out_seconds": 34.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B2",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 34.0,
+        "out_seconds": 62.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B3",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 68.0,
+        "out_seconds": 105.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B4",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 105.0,
+        "out_seconds": 150.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "tight-out",
+        "uncertainty_labels": [
+          "SENTENCE_SEAM_RISK"
+        ]
+      },
+      {
+        "bid": "B5",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 150.0,
+        "out_seconds": 190.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B6",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 196.0,
+        "out_seconds": 230.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B7",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 260.0,
+        "out_seconds": 295.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      },
+      {
+        "bid": "B8",
+        "source_file_id": "SOURCE_XML",
+        "clipitem_refs": [
+          "clipitem-1"
+        ],
+        "in_seconds": 295.0,
+        "out_seconds": 330.0,
+        "track_handling": "V1 only",
+        "audio_handling": "linked sync audio, independently manageable",
+        "boundary_note": "clean",
+        "uncertainty_labels": []
+      }
+    ],
+    "provenance_notes": [
+      "B1: SRC1 @15s, boundary clean",
+      "B2: SRC1 @34s, boundary clean",
+      "B3: SRC1 @68s, boundary clean",
+      "B4: SRC1 @105s, boundary tight-out",
+      "B5: SRC1 @150s, boundary clean",
+      "B6: SRC1 @196s, boundary clean",
+      "B7: SRC1 @260s, boundary clean",
+      "B8: SRC1 @295s, boundary clean"
+    ]
+  },
+  "seam_risks": [
+    "B4 out-point trims mid-breath; check seam on import"
+  ]
+}

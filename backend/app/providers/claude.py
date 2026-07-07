@@ -52,14 +52,35 @@ class ClaudeProvider:
         return self._client
 
     async def _complete(self, system: str, user: str, max_tokens: int):
-        """Single completion round-trip via the Anthropic messages API."""
+        """Completion round-trip via the Anthropic messages API, with a
+        config-driven timeout and bounded retry on transport errors only
+        (invalid content is the repair round's job, never retried here)."""
+        import anthropic
+        import asyncio
+
         client = self._get_client()
-        return await client.messages.create(
-            model=self.capabilities.model or "claude-sonnet-4-6",
-            max_tokens=max_tokens,
-            system=system,
-            messages=[{"role": "user", "content": user}],
-        )
+        ep = self.capabilities.endpoint
+        last_exc: Exception | None = None
+        for attempt in range(1 + max(0, ep.transport_retries)):
+            try:
+                return await client.messages.create(
+                    model=self.capabilities.model or "claude-sonnet-4-6",
+                    max_tokens=max_tokens,
+                    system=system,
+                    messages=[{"role": "user", "content": user}],
+                    timeout=ep.timeout_seconds,
+                )
+            except (anthropic.APIConnectionError, anthropic.APITimeoutError) as exc:
+                last_exc = exc
+                if attempt < ep.transport_retries:
+                    await asyncio.sleep(1.5 * (attempt + 1))
+        raise last_exc  # explicit failure after bounded retries
+
+    def readiness(self) -> tuple[bool, str]:
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            return False, ("Claude fallback not configured — missing "
+                           "server-side credential (env ANTHROPIC_API_KEY).")
+        return True, f"Claude fallback configured (model {self.capabilities.model})."
 
     async def run_task(self, task: TaskSpec) -> TaskResult:
         if not os.environ.get("ANTHROPIC_API_KEY"):
