@@ -1,0 +1,7 @@
+{
+  "name": "benchmark_03_placeholder",
+  "description": "Reserved third benchmark. Suggested: tutorial/walkthrough or cleanup-first assembly to cover a different mode.",
+  "status": "placeholder",
+  "setup": {},
+  "success_criteria": []
+}

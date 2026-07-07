@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xmeml>
+<!-- Structurally realistic Premiere Pro "Final Cut Pro XML" export shape:
+     project wrapper, labels/colorinfo, timecode block, pproTicks, masterclipid,
+     id-only later file refs, sourcetrack, link groups with mediatype/trackindex,
+     a transitionitem and a generatoritem, markers, filters, stereo audio on
+     two mono tracks. Synthetic content; structure mirrors real exports. -->
+<xmeml version="4">
+  <project>
+    <name>SYNC_INTERVIEW</name>
+    <children>
+      <sequence id="sequence-1" explodedTracks="true">
+        <uuid>a1b2c3d4-0000-1111-2222-333344445555</uuid>
+        <duration>1500</duration>
+        <rate>
+          <timebase>25</timebase>
+          <ntsc>FALSE</ntsc>
+        </rate>
+        <name>SYNC_INTERVIEW</name>
+        <media>
+          <video>
+            <format>
+              <samplecharacteristics>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <codec><name>Apple ProRes 422</name></codec>
+                <width>1920</width>
+                <height>1080</height>
+                <anamorphic>FALSE</anamorphic>
+                <pixelaspectratio>square</pixelaspectratio>
+                <fielddominance>none</fielddominance>
+              </samplecharacteristics>
+            </format>
+            <track>
+              <clipitem id="clipitem-1">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>0</start>
+                <end>750</end>
+                <in>0</in>
+                <out>750</out>
+                <pproTicksIn>0</pproTicksIn>
+                <pproTicksOut>7620480000000</pproTicksOut>
+                <alphatype>none</alphatype>
+                <file id="file-1">
+                  <name>A014_C002_INTERVIEW.mov</name>
+                  <pathurl>file://localhost/Volumes/MEDIA/A014_C002_INTERVIEW.mov</pathurl>
+                  <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                  <duration>1500</duration>
+                  <timecode>
+                    <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                    <string>10:24:31:04</string>
+                    <frame>936779</frame>
+                    <displayformat>NDF</displayformat>
+                  </timecode>
+                  <media>
+                    <video>
+                      <samplecharacteristics>
+                        <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                        <width>1920</width>
+                        <height>1080</height>
+                      </samplecharacteristics>
+                    </video>
+                    <audio>
+                      <samplecharacteristics>
+                        <depth>16</depth>
+                        <samplerate>48000</samplerate>
+                      </samplecharacteristics>
+                      <channelcount>2</channelcount>
+                    </audio>
+                  </media>
+                </file>
+                <filter>
+                  <effect>
+                    <name>Basic Motion</name>
+                    <effectid>basic</effectid>
+                    <effectcategory>motion</effectcategory>
+                    <effecttype>motion</effecttype>
+                    <mediatype>video</mediatype>
+                  </effect>
+                </filter>
+                <marker>
+                  <comment>good take</comment>
+                  <name>Q1</name>
+                  <in>120</in>
+                  <out>-1</out>
+                </marker>
+                <link>
+                  <linkclipref>clipitem-1</linkclipref>
+                  <mediatype>video</mediatype>
+                  <trackindex>1</trackindex>
+                  <clipindex>1</clipindex>
+                </link>
+                <link>
+                  <linkclipref>clipitem-3</linkclipref>
+                  <mediatype>audio</mediatype>
+                  <trackindex>1</trackindex>
+                  <clipindex>1</clipindex>
+                  <groupindex>1</groupindex>
+                </link>
+                <link>
+                  <linkclipref>clipitem-4</linkclipref>
+                  <mediatype>audio</mediatype>
+                  <trackindex>2</trackindex>
+                  <clipindex>1</clipindex>
+                  <groupindex>1</groupindex>
+                </link>
+                <labels><label2>Iris</label2></labels>
+              </clipitem>
+              <transitionitem>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>735</start>
+                <end>765</end>
+                <alignment>center</alignment>
+                <effect>
+                  <name>Cross Dissolve</name>
+                  <effectid>Cross Dissolve</effectid>
+                  <effectcategory>Dissolve</effectcategory>
+                  <effecttype>transition</effecttype>
+                  <mediatype>video</mediatype>
+                </effect>
+              </transitionitem>
+              <clipitem id="clipitem-2">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>750</start>
+                <end>1500</end>
+                <in>750</in>
+                <out>1500</out>
+                <pproTicksIn>7620480000000</pproTicksIn>
+                <pproTicksOut>15240960000000</pproTicksOut>
+                <alphatype>none</alphatype>
+                <file id="file-1"/>
+                <link>
+                  <linkclipref>clipitem-2</linkclipref>
+                  <mediatype>video</mediatype>
+                  <trackindex>1</trackindex>
+                  <clipindex>2</clipindex>
+                </link>
+                <link>
+                  <linkclipref>clipitem-5</linkclipref>
+                  <mediatype>audio</mediatype>
+                  <trackindex>1</trackindex>
+                  <clipindex>2</clipindex>
+                  <groupindex>1</groupindex>
+                </link>
+                <link>
+                  <linkclipref>clipitem-6</linkclipref>
+                  <mediatype>audio</mediatype>
+                  <trackindex>2</trackindex>
+                  <clipindex>2</clipindex>
+                  <groupindex>1</groupindex>
+                </link>
+                <labels><label2>Iris</label2></labels>
+              </clipitem>
+            </track>
+            <track>
+              <generatoritem id="generatoritem-1">
+                <name>Lower Third</name>
+                <enabled>TRUE</enabled>
+                <duration>125</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>100</start>
+                <end>225</end>
+                <in>0</in>
+                <out>125</out>
+                <effect>
+                  <name>Text</name>
+                  <effectid>Text</effectid>
+                  <effectcategory>Text</effectcategory>
+                  <effecttype>generator</effecttype>
+                  <mediatype>video</mediatype>
+                </effect>
+              </generatoritem>
+            </track>
+          </video>
+          <audio>
+            <numOutputChannels>2</numOutputChannels>
+            <format>
+              <samplecharacteristics>
+                <depth>16</depth>
+                <samplerate>48000</samplerate>
+              </samplecharacteristics>
+            </format>
+            <track currentExplodedTrackIndex="0" totalExplodedTrackCount="2" premiereTrackType="Stereo">
+              <clipitem id="clipitem-3" premiereChannelType="stereo">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>0</start>
+                <end>750</end>
+                <in>0</in>
+                <out>750</out>
+                <pproTicksIn>0</pproTicksIn>
+                <pproTicksOut>7620480000000</pproTicksOut>
+                <file id="file-1"/>
+                <sourcetrack>
+                  <mediatype>audio</mediatype>
+                  <trackindex>1</trackindex>
+                </sourcetrack>
+                <link><linkclipref>clipitem-1</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+                <link><linkclipref>clipitem-3</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>1</clipindex><groupindex>1</groupindex></link>
+                <link><linkclipref>clipitem-4</linkclipref><mediatype>audio</mediatype><trackindex>2</trackindex><clipindex>1</clipindex><groupindex>1</groupindex></link>
+              </clipitem>
+              <clipitem id="clipitem-5" premiereChannelType="stereo">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>750</start>
+                <end>1500</end>
+                <in>750</in>
+                <out>1500</out>
+                <file id="file-1"/>
+                <sourcetrack><mediatype>audio</mediatype><trackindex>1</trackindex></sourcetrack>
+                <link><linkclipref>clipitem-2</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+                <link><linkclipref>clipitem-5</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>2</clipindex><groupindex>1</groupindex></link>
+                <link><linkclipref>clipitem-6</linkclipref><mediatype>audio</mediatype><trackindex>2</trackindex><clipindex>2</clipindex><groupindex>1</groupindex></link>
+              </clipitem>
+            </track>
+            <track currentExplodedTrackIndex="1" totalExplodedTrackCount="2" premiereTrackType="Stereo">
+              <clipitem id="clipitem-4" premiereChannelType="stereo">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>0</start>
+                <end>750</end>
+                <in>0</in>
+                <out>750</out>
+                <file id="file-1"/>
+                <sourcetrack><mediatype>audio</mediatype><trackindex>2</trackindex></sourcetrack>
+                <link><linkclipref>clipitem-1</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>1</clipindex></link>
+                <link><linkclipref>clipitem-3</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>1</clipindex><groupindex>1</groupindex></link>
+                <link><linkclipref>clipitem-4</linkclipref><mediatype>audio</mediatype><trackindex>2</trackindex><clipindex>1</clipindex><groupindex>1</groupindex></link>
+              </clipitem>
+              <clipitem id="clipitem-6" premiereChannelType="stereo">
+                <masterclipid>masterclip-1</masterclipid>
+                <name>A014_C002_INTERVIEW</name>
+                <enabled>TRUE</enabled>
+                <duration>1500</duration>
+                <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+                <start>750</start>
+                <end>1500</end>
+                <in>750</in>
+                <out>1500</out>
+                <file id="file-1"/>
+                <sourcetrack><mediatype>audio</mediatype><trackindex>2</trackindex></sourcetrack>
+                <link><linkclipref>clipitem-2</linkclipref><mediatype>video</mediatype><trackindex>1</trackindex><clipindex>2</clipindex></link>
+                <link><linkclipref>clipitem-5</linkclipref><mediatype>audio</mediatype><trackindex>1</trackindex><clipindex>2</clipindex><groupindex>1</groupindex></link>
+                <link><linkclipref>clipitem-6</linkclipref><mediatype>audio</mediatype><trackindex>2</trackindex><clipindex>2</clipindex><groupindex>1</groupindex></link>
+              </clipitem>
+            </track>
+          </audio>
+        </media>
+        <timecode>
+          <rate><timebase>25</timebase><ntsc>FALSE</ntsc></rate>
+          <string>00:00:00:00</string>
+          <frame>0</frame>
+          <displayformat>NDF</displayformat>
+        </timecode>
+        <labels><label2>Forest</label2></labels>
+      </sequence>
+    </children>
+  </project>
+</xmeml>

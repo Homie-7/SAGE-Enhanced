@@ -1,0 +1,17 @@
+{
+  "name": "lnd_specialist_showcase",
+  "description": "Role/concept showcase for an L&D specialist; clarity requirement active.",
+  "status": "awaiting_source_material",
+  "setup": {
+    "clarity": { "value": "yes", "origin": "user" },
+    "cut_style": { "value": "natural", "origin": "default" },
+    "source_handling": { "value": "single", "origin": "default" }
+  },
+  "success_criteria": [
+    "cut clearly explains what the role is and why it matters",
+    "definition/explainer beat present or clarity gap flagged",
+    "representation summary produced before approval",
+    "paper edit validates against schema",
+    "rebuilt XML passes integrity checks"
+  ]
+}

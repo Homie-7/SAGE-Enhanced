@@ -1,0 +1,12 @@
+{
+  "provider": "val",
+  "model": null,
+  "max_context_tokens": 16000,
+  "max_output_tokens": 2000,
+  "supports_system_prompt": true,
+  "supports_json_schema_mode": false,
+  "json_strategy": "prompt_and_repair",
+  "chunking": { "transcript_chunk_tokens": 6000, "overlap_tokens": 300 },
+  "retry": { "max_attempts": 2, "repair_prompt": true },
+  "_note": "Conservative assumptions until VAL API access is confirmed. Update this file first when facts arrive."
+}

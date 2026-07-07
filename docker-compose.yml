@@ -1,0 +1,36 @@
+# SAGE Internal — managed-service deployment.
+#
+# Production posture: centrally hosted, VAL provider, standard mode (no
+# provider controls exposed). All provider credentials are server-side
+# secrets managed by the SAGE administrator; end users never supply keys.
+#
+# SQLite lives on a volume; swapping to Postgres later means adding a
+# service here and a ProjectStore implementation — no application redesign.
+services:
+  backend:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      # Production defaults — do not override per user, only per deployment.
+      - SAGE_PROVIDER=val
+      - SAGE_ADMIN_MODE=0
+      - SAGE_DB_PATH=/data/sage.db
+      - SAGE_ARTEFACT_ROOT=/data/artefacts
+    volumes:
+      - sage-data:/data
+      - ./prompts:/app/prompts:ro
+  frontend:
+    build: ./frontend
+    ports: ["5173:5173"]
+volumes:
+  sage-data:
+
+# --- Admin/dev overlay (docker-compose.admin.yml), NOT for production -------
+# services:
+#   backend:
+#     environment:
+#       - SAGE_ADMIN_MODE=1
+#       - SAGE_PROVIDER=${SAGE_PROVIDER:-mock}
+#       # Fallback provider credential, held by the administrator only:
+#       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+# Run with: docker compose -f docker-compose.yml -f docker-compose.admin.yml up

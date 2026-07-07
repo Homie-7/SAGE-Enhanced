@@ -1,0 +1,11 @@
+{
+  "provider": "claude",
+  "model": "claude-sonnet-4-6",
+  "max_context_tokens": 180000,
+  "max_output_tokens": 8000,
+  "supports_system_prompt": true,
+  "supports_json_schema_mode": false,
+  "json_strategy": "prompt_and_repair",
+  "chunking": { "transcript_chunk_tokens": 24000, "overlap_tokens": 600 },
+  "retry": { "max_attempts": 2, "repair_prompt": true }
+}

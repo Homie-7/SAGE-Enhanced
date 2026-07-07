@@ -1,0 +1,11 @@
+{
+  "provider": "mock",
+  "model": null,
+  "max_context_tokens": 1000000,
+  "max_output_tokens": 100000,
+  "supports_system_prompt": true,
+  "supports_json_schema_mode": true,
+  "json_strategy": "native_schema",
+  "chunking": { "transcript_chunk_tokens": 1000000, "overlap_tokens": 0 },
+  "retry": { "max_attempts": 1, "repair_prompt": false }
+}
