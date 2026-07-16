@@ -12,6 +12,7 @@ backend/__pycache__/
 backend/sage.db
 backend/artefacts/
 backend/*.egg-info/
+backend/build/
 
 # Frontend
 frontend/node_modules/

@@ -1,4 +1,9 @@
-# SAGE staging deployment (Railway, single service)
+# SAGE staging deployment — alternative path (Railway, single service)
+
+> **This is no longer the recommended path.** Staging now defaults to
+> Google Cloud Run — see `docs/deployment-cloud-run.md`. This guide is kept
+> for anyone who later prefers Railway instead; the same root `Dockerfile`
+> works on both unchanged.
 
 The simplest way to get SAGE online: **one Railway service** hosts both the
 API and the app itself (the backend serves the built frontend from the same
@@ -9,8 +14,8 @@ setup, no copying URLs between two places.
 
 1. Go to [railway.app](https://railway.app), sign in, **New Project →
    Deploy from GitHub repo**, select `Homie-7/SAGE-Enhanced` and this
-   branch. Railway reads `railway.json` and builds automatically — nothing
-   else to configure here.
+   branch. Railway auto-detects the root `Dockerfile` and builds it —
+   nothing else to configure here.
 2. **Add a volume**: service → **Settings → Volumes → New Volume**, mount
    path `/data`. (Keeps uploaded projects and rebuilds across restarts.)
 3. **Set environment variables**: service → **Variables** tab:

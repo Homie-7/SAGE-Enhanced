@@ -61,6 +61,7 @@ cd backend && pytest
 ```
 
 ## Hosted staging deployment
-See `docs/deployment-staging.md` for a step-by-step guide to deploying the
-backend on Railway and the frontend on Vercel (non-technical, dashboard-only
-once the repo is connected).
+See `docs/deployment-cloud-run.md` for the recommended (Google Cloud Run)
+staging guide — one container, dashboard-only once the repo is connected.
+`docs/deployment-staging.md` covers a Railway alternative using the same
+Dockerfile.
