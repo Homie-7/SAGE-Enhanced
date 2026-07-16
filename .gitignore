@@ -1,0 +1,22 @@
+# Secrets / local env
+.env
+.env.local
+.env.*.local
+!*.env.example
+
+# Backend
+backend/.venv/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+backend/sage.db
+backend/artefacts/
+backend/*.egg-info/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# OS / editor
+.DS_Store

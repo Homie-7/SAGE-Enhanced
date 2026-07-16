@@ -6,7 +6,11 @@
  */
 import type { Project, ValidationReport } from "../types/state";
 
-const BASE = "/api";
+// In dev, Vite proxies "/api" to the local backend (vite.config.ts). In a
+// hosted build, the frontend and backend are separate deployments, so the
+// full backend URL must be supplied at build time via VITE_API_BASE_URL
+// (a public URL, not a secret — set in the hosting dashboard).
+const BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${path}`, init);

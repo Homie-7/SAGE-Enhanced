@@ -5,6 +5,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app import config
 from app.api import admin, outputs, phases, projects, review, uploads
 
 app = FastAPI(
@@ -18,7 +19,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite dev server
+    allow_origins=config.CORS_ORIGINS,
     allow_methods=["*"],
     allow_headers=["*"],
 )

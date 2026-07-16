@@ -30,3 +30,12 @@ MOCK_FIXTURES = os.environ.get(
     str(REPO_ROOT / "backend" / "tests" / "fixtures" / "benchmarks"
         / "teacher_success_story" / "expected" / "mock_tasks"),
 )
+
+# Browser origins allowed to call this API (comma-separated). Defaults to the
+# Vite dev server only. A hosted deployment (e.g. the Vercel frontend) must
+# set this explicitly — it is not a secret, just the frontend's public URL(s).
+CORS_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("SAGE_CORS_ORIGINS", "http://localhost:5173").split(",")
+    if origin.strip()
+]

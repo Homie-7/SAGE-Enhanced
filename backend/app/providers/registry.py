@@ -11,6 +11,7 @@ Selection rules (non-negotiable):
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Callable
 
@@ -31,11 +32,34 @@ class ProviderRegistry:
         self._factories: dict[str, Callable[[], ProviderAdapter]] = {
             "mock": lambda: MockProvider(self._mock_fixture_dir),
             "claude": lambda: ClaudeProvider(self._load_caps("claude")),
-            "val": lambda: VALProvider(self._load_caps("val")),
+            "val": lambda: VALProvider(self._load_val_caps()),
         }
 
     def _load_caps(self, name: str) -> ProviderCapabilities:
         return ProviderCapabilities.load(self._configs_dir / f"{name}.json")
+
+    def _load_val_caps(self) -> ProviderCapabilities:
+        """VAL transport facts (base_url/api_style/model) are not secrets, but
+        an operator deploying to a new host (staging vs. production VAL
+        gateway) shouldn't have to edit and commit prompts/configs/val.json to
+        point at them. Env vars — set in the hosting dashboard — override the
+        checked-in file when present; the file remains the default/documented
+        source of truth. The credential itself (VAL_API_KEY) is never read
+        here — that stays in providers/val.py, server-side only."""
+        caps = self._load_caps("val")
+        overrides = {
+            "base_url": os.environ.get("VAL_BASE_URL"),
+            "api_style": os.environ.get("VAL_API_STYLE"),
+        }
+        overrides = {k: v for k, v in overrides.items() if v}
+        if overrides:
+            caps = caps.model_copy(update={
+                "endpoint": caps.endpoint.model_copy(update=overrides)
+            })
+        model = os.environ.get("VAL_MODEL")
+        if model:
+            caps = caps.model_copy(update={"model": model})
+        return caps
 
     def available(self) -> list[str]:
         return sorted(self._factories)
