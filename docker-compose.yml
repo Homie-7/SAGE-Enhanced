@@ -16,9 +16,15 @@ services:
       - SAGE_ADMIN_MODE=0
       - SAGE_DB_PATH=/data/sage.db
       - SAGE_ARTEFACT_ROOT=/data/artefacts
+      # Frontend origin(s) allowed to call this API (comma-separated, public URLs).
+      - SAGE_CORS_ORIGINS=${SAGE_CORS_ORIGINS:-http://localhost:5173}
       # VAL credential — server-side secret held by the SAGE administrator.
-      # Users never supply keys. Endpoint facts live in prompts/configs/val.json.
+      # Users never supply keys. Endpoint facts live in prompts/configs/val.json,
+      # optionally overridden per-deployment via VAL_BASE_URL/VAL_API_STYLE/VAL_MODEL.
       - VAL_API_KEY=${VAL_API_KEY:-}
+      - VAL_BASE_URL=${VAL_BASE_URL:-}
+      - VAL_API_STYLE=${VAL_API_STYLE:-}
+      - VAL_MODEL=${VAL_MODEL:-}
     volumes:
       - sage-data:/data
       - ./prompts:/app/prompts:ro

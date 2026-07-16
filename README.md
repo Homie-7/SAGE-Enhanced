@@ -59,3 +59,9 @@ Tests:
 ```
 cd backend && pytest
 ```
+
+## Hosted staging deployment
+See `docs/deployment-cloud-run.md` for the recommended (Google Cloud Run)
+staging guide — one container, dashboard-only once the repo is connected.
+`docs/deployment-staging.md` covers a Railway alternative using the same
+Dockerfile.
