@@ -58,7 +58,8 @@ async def meta():
 # in local dev/tests, where the Vite dev server or test client is used
 # instead; this block registers nothing in that case.
 if config.STATIC_ROOT and config.STATIC_ROOT.is_dir():
-    assets_dir = config.STATIC_ROOT / "assets"
+    _static_root = config.STATIC_ROOT.resolve()
+    assets_dir = _static_root / "assets"
     if assets_dir.is_dir():
         app.mount("/assets", StaticFiles(directory=assets_dir), name="frontend-assets")
 
@@ -67,10 +68,19 @@ if config.STATIC_ROOT and config.STATIC_ROOT.is_dir():
         """SPA fallback: serve the matching static file if one exists,
         otherwise index.html so client-side routing (BrowserRouter) can
         handle the path. /api/* never reaches here — routers above match
-        first."""
+        first.
+
+        full_path is attacker-controlled request text, so it must be
+        resolved and containment-checked before touching the filesystem —
+        a raw `_static_root / full_path` would let a path like
+        `../../etc/passwd` escape the static directory."""
         if full_path.startswith("api/"):
             raise HTTPException(404)
-        candidate = config.STATIC_ROOT / full_path
+        candidate = (_static_root / full_path).resolve()
+        try:
+            candidate.relative_to(_static_root)
+        except ValueError:
+            return FileResponse(_static_root / "index.html")
         if full_path and candidate.is_file():
             return FileResponse(candidate)
-        return FileResponse(config.STATIC_ROOT / "index.html")
+        return FileResponse(_static_root / "index.html")
