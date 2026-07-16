@@ -1,10 +1,17 @@
-# Backend deployment image (Railway). Built with the repo root as build
-# context (see railway.json) because the backend needs prompts/ — the
-# canonical SAGE source of truth and provider configs — which lives outside
-# backend/ as a sibling directory. The frontend is deployed separately
-# (Vercel) and is not part of this image.
-FROM python:3.12-slim
+# Single-service staging image: builds the frontend, then serves it from the
+# same FastAPI app as the API (one Railway service, one domain, no CORS, no
+# second hosting platform). Built with the repo root as context (see
+# railway.json) because the backend needs the sibling prompts/ directory —
+# the canonical SAGE source of truth and provider configs.
 
+FROM node:20-slim AS frontend-build
+WORKDIR /frontend
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build
+
+FROM python:3.12-slim
 WORKDIR /app
 
 COPY backend/pyproject.toml backend/pyproject.toml
@@ -12,8 +19,10 @@ COPY backend/app backend/app
 RUN pip install --no-cache-dir ./backend
 
 COPY prompts prompts
+COPY --from=frontend-build /frontend/dist /app/static
 
 ENV SAGE_PROMPTS_ROOT=/app/prompts
+ENV SAGE_STATIC_ROOT=/app/static
 WORKDIR /app/backend
 
 EXPOSE 8000

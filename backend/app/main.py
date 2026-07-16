@@ -2,8 +2,12 @@
 
 from __future__ import annotations
 
-from fastapi import FastAPI
+from pathlib import Path
+
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app import config
 from app.api import admin, outputs, phases, projects, review, uploads
@@ -46,3 +50,27 @@ async def meta():
         body["default_provider"] = config.DEFAULT_PROVIDER
         body["available_providers"] = get_registry().available()
     return body
+
+
+# Optional single-service mode: if a built frontend is present (baked in by
+# the Dockerfile at SAGE_STATIC_ROOT), serve it from this same app/origin —
+# the simplest staging deployment, no separate frontend host, no CORS. Absent
+# in local dev/tests, where the Vite dev server or test client is used
+# instead; this block registers nothing in that case.
+if config.STATIC_ROOT and config.STATIC_ROOT.is_dir():
+    assets_dir = config.STATIC_ROOT / "assets"
+    if assets_dir.is_dir():
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="frontend-assets")
+
+    @app.get("/{full_path:path}")
+    async def serve_frontend(full_path: str):
+        """SPA fallback: serve the matching static file if one exists,
+        otherwise index.html so client-side routing (BrowserRouter) can
+        handle the path. /api/* never reaches here — routers above match
+        first."""
+        if full_path.startswith("api/"):
+            raise HTTPException(404)
+        candidate = config.STATIC_ROOT / full_path
+        if full_path and candidate.is_file():
+            return FileResponse(candidate)
+        return FileResponse(config.STATIC_ROOT / "index.html")
