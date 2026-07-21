@@ -44,7 +44,7 @@ class VALProvider:
         if ep.api_style not in _STYLES:
             missing.append(
                 f"endpoint.api_style in prompts/configs/val.json (one of {_STYLES})")
-        if not self.capabilities.model:
+        if not self._model():
             missing.append("model in prompts/configs/val.json")
         env = ep.auth_env or "VAL_API_KEY"
         if not os.environ.get(env):
@@ -57,7 +57,10 @@ class VALProvider:
             return False, "VAL not configured — missing: " + "; ".join(missing)
         ep = self.capabilities.endpoint
         return True, (f"VAL configured: {ep.api_style} at {ep.base_url}, "
-                      f"model {self.capabilities.model}")
+                      f"model {self._model()}")
+
+    def _model(self) -> str | None:
+        return os.environ.get("VAL_MODEL") or self.capabilities.model
 
     # -- request shaping -----------------------------------------------------
 
@@ -72,7 +75,7 @@ class VALProvider:
         if ep.api_style == "openai_chat":
             url = f"{base}/chat/completions"
             body = {
-                "model": self.capabilities.model,
+                "model": self._model(),
                 "max_tokens": max_tokens,
                 "messages": [
                     {"role": "system", "content": task.system_prompt},
@@ -82,7 +85,7 @@ class VALProvider:
         else:  # anthropic_messages
             url = f"{base}/messages"
             body = {
-                "model": self.capabilities.model,
+                "model": self._model(),
                 "max_tokens": max_tokens,
                 "system": task.system_prompt,
                 "messages": [{"role": "user", "content": task.user_prompt}],
