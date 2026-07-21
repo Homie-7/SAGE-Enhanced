@@ -7,6 +7,25 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+
+def _load_env_file(path: Path) -> None:
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip("'\"")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+if os.environ.get("SAGE_SKIP_DOTENV") != "1":
+    _load_env_file(REPO_ROOT / ".env")
+    _load_env_file(REPO_ROOT / "backend" / ".env")
+
 DB_PATH = os.environ.get("SAGE_DB_PATH", str(REPO_ROOT / "backend" / "sage.db"))
 ARTEFACT_ROOT = os.environ.get("SAGE_ARTEFACT_ROOT", str(REPO_ROOT / "backend" / "artefacts"))
 PROMPTS_ROOT = os.environ.get("SAGE_PROMPTS_ROOT", str(REPO_ROOT / "prompts"))

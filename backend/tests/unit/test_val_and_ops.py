@@ -172,6 +172,7 @@ async def test_non_retry_on_http_error_status(monkeypatch):
 # --- operator status endpoint ------------------------------------------------
 
 def make_client(tmp_path, monkeypatch, *, admin: bool):
+    monkeypatch.setenv("SAGE_SKIP_DOTENV", "1")
     monkeypatch.setenv("SAGE_DB_PATH", str(tmp_path / "sage.db"))
     monkeypatch.setenv("SAGE_ARTEFACT_ROOT", str(tmp_path / "artefacts"))
     monkeypatch.setenv("SAGE_PROVIDER", "val")
@@ -188,7 +189,7 @@ def test_admin_status_hidden_in_standard_mode(tmp_path, monkeypatch):
     assert client.get("/api/admin/status").status_code == 403
 
 
-def test_admin_status_reports_unwired_val_honestly(tmp_path, monkeypatch):
+def test_admin_status_reports_missing_val_secret_honestly(tmp_path, monkeypatch):
     monkeypatch.delenv("VAL_API_KEY", raising=False)
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     client = make_client(tmp_path, monkeypatch, admin=True)
@@ -196,7 +197,9 @@ def test_admin_status_reports_unwired_val_honestly(tmp_path, monkeypatch):
     assert body["ok"] is False  # default provider (val) not ready
     assert body["default_provider"] == "val"
     assert body["providers"]["val"]["ready"] is False
-    assert "base_url" in body["providers"]["val"]["detail"]
+    detail = body["providers"]["val"]["detail"]
+    assert "VAL_API_KEY" in detail
+    assert "base_url" not in detail
     assert body["providers"]["mock"]["ready"] is True
     assert body["providers"]["claude"]["ready"] is False
     assert body["database"]["writable"] is True

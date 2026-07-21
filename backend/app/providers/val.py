@@ -39,12 +39,12 @@ class VALProvider:
     def _missing(self) -> list[str]:
         ep = self.capabilities.endpoint
         missing: list[str] = []
-        if not ep.base_url:
+        if not self._base_url():
             missing.append("endpoint.base_url in prompts/configs/val.json")
-        if ep.api_style not in _STYLES:
+        if self._api_style() not in _STYLES:
             missing.append(
                 f"endpoint.api_style in prompts/configs/val.json (one of {_STYLES})")
-        if not self.capabilities.model:
+        if not self._model():
             missing.append("model in prompts/configs/val.json")
         env = ep.auth_env or "VAL_API_KEY"
         if not os.environ.get(env):
@@ -55,9 +55,22 @@ class VALProvider:
         missing = self._missing()
         if missing:
             return False, "VAL not configured — missing: " + "; ".join(missing)
-        ep = self.capabilities.endpoint
-        return True, (f"VAL configured: {ep.api_style} at {ep.base_url}, "
-                      f"model {self.capabilities.model}")
+        return True, (f"VAL configured: {self._api_style()} at {self._base_url()}, "
+                      f"model {self._model()}")
+
+    # Each of these three transport facts may be overridden at runtime by an
+    # env var (VAL_BASE_URL / VAL_API_STYLE / VAL_MODEL) — e.g. in a local
+    # .env, or a hosting dashboard for staging — without editing the
+    # checked-in prompts/configs/val.json. The credential itself
+    # (VAL_API_KEY) is never overridden here; it is always env-only.
+    def _base_url(self) -> str | None:
+        return os.environ.get("VAL_BASE_URL") or self.capabilities.endpoint.base_url
+
+    def _api_style(self) -> str | None:
+        return os.environ.get("VAL_API_STYLE") or self.capabilities.endpoint.api_style
+
+    def _model(self) -> str | None:
+        return os.environ.get("VAL_MODEL") or self.capabilities.model
 
     # -- request shaping -----------------------------------------------------
 
@@ -68,11 +81,11 @@ class VALProvider:
         value = f"{ep.auth_scheme} {credential}" if ep.auth_scheme else credential
         headers = {ep.auth_header: value, "Content-Type": "application/json"}
 
-        base = (ep.base_url or "").rstrip("/")
-        if ep.api_style == "openai_chat":
+        base = (self._base_url() or "").rstrip("/")
+        if self._api_style() == "openai_chat":
             url = f"{base}/chat/completions"
             body = {
-                "model": self.capabilities.model,
+                "model": self._model(),
                 "max_tokens": max_tokens,
                 "messages": [
                     {"role": "system", "content": task.system_prompt},
@@ -82,7 +95,7 @@ class VALProvider:
         else:  # anthropic_messages
             url = f"{base}/messages"
             body = {
-                "model": self.capabilities.model,
+                "model": self._model(),
                 "max_tokens": max_tokens,
                 "system": task.system_prompt,
                 "messages": [{"role": "user", "content": task.user_prompt}],
@@ -149,12 +162,12 @@ class VALProvider:
 
         try:
             data = resp.json()
-            text = self._extract_text(ep.api_style or "", data)
+            text = self._extract_text(self._api_style() or "", data)
         except Exception as exc:
             return TaskResult(
                 task_name=task.task_name, provider=self.name,
                 raw_text=resp.text[:2000], valid=False,
-                error=f"VAL response could not be read as {ep.api_style}: {exc}",
+                error=f"VAL response could not be read as {self._api_style()}: {exc}",
             )
         parsed = extract_json(text)
         if parsed is None:

@@ -38,7 +38,7 @@ recorded reason) exist only in admin/dev deployments (`SAGE_ADMIN_MODE=1`);
 the backend enforces this server-side and the UI only reveals provider
 controls when `/api/meta` reports admin mode.
 
-- `val` — clean stub until programmatic access is confirmed
+- `val` — RMIT VAL OpenAI-compatible gateway (requires server-side `VAL_API_KEY`)
 - `claude` — dev/fallback (requires `ANTHROPIC_API_KEY`)
 - `mock` — fixture-driven, fully deterministic, used by tests/benchmarks
 

@@ -2,6 +2,7 @@
 .env
 .env.local
 .env.*.local
+backend/.env
 !*.env.example
 
 # Backend
@@ -9,9 +10,11 @@ backend/.venv/
 backend/__pycache__/
 **/__pycache__/
 *.pyc
+*.py[cod]
 backend/sage.db
 backend/artefacts/
 backend/*.egg-info/
+*.egg-info/
 backend/build/
 
 # Frontend
