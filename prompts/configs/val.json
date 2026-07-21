@@ -1,6 +1,6 @@
 {
   "provider": "val",
-  "model": null,
+  "model": "gpt-5.6-sol",
   "max_context_tokens": 16000,
   "max_output_tokens": 2000,
   "supports_system_prompt": true,
@@ -9,13 +9,13 @@
   "chunking": { "transcript_chunk_tokens": 6000, "overlap_tokens": 300 },
   "retry": { "max_attempts": 2, "repair_prompt": true },
   "endpoint": {
-    "base_url": null,
-    "api_style": null,
+    "base_url": "https://val-npe.rmit.edu.au/api",
+    "api_style": "openai_chat",
     "auth_env": "VAL_API_KEY",
     "auth_header": "Authorization",
     "auth_scheme": "Bearer",
     "timeout_seconds": 120.0,
     "transport_retries": 1
   },
-  "_wiring": "To connect VAL: (1) set base_url (gateway URL, no trailing endpoint path), (2) set api_style to 'openai_chat' or 'anthropic_messages' to match the gateway, (3) set model to the VAL model id, (4) export VAL_API_KEY on the SAGE server (never in this file, never from users), (5) confirm via GET /api/admin/status in an admin deployment. Adjust auth_header/auth_scheme only if the gateway uses a non-standard header (e.g. 'x-api-key' with auth_scheme null). Update max_context/output once real limits are confirmed."
+  "_wiring": "VAL is wired to the same OpenAI-compatible RMIT NPE gateway used by h5p Creator: POST https://val-npe.rmit.edu.au/api/chat/completions. Default model is gpt-5.6-sol and can be overridden with VAL_MODEL in .env. To run it, set VAL_API_KEY on the SAGE server (never in this file, never from users), then confirm via GET /api/admin/status in an admin deployment. Adjust auth_header/auth_scheme only if the gateway changes to a non-standard header."
 }

@@ -1,0 +1,9 @@
+.env
+backend/.env
+backend/.venv/
+backend/sage.db
+backend/artefacts/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
