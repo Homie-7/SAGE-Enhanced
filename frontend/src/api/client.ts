@@ -12,8 +12,7 @@ import type { Project, ValidationReport } from "../types/state";
 // (a public URL, not a secret — set in the hosting dashboard).
 const BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
-async function req<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, init);
+async function checkOk(res: Response): Promise<void> {
   if (!res.ok) {
     let detail = `${res.status}`;
     try {
@@ -22,7 +21,18 @@ async function req<T>(path: string, init?: RequestInit): Promise<T> {
     } catch { /* keep status */ }
     throw new Error(detail);
   }
+}
+
+async function req<T>(path: string, init?: RequestInit): Promise<T> {
+  const res = await fetch(`${BASE}${path}`, init);
+  await checkOk(res);
   return res.json() as Promise<T>;
+}
+
+/** For endpoints with no response body (e.g. DELETE -> 204). */
+async function reqVoid(path: string, init?: RequestInit): Promise<void> {
+  const res = await fetch(`${BASE}${path}`, init);
+  await checkOk(res);
 }
 
 const json = (body: unknown): RequestInit => ({
@@ -62,6 +72,12 @@ export async function uploadInput(id: string, kind: "xml" | "transcript" | "note
 
 export const submitSetup = (id: string, setup: Record<string, unknown>) =>
   req<Project>(`/projects/${id}/setup`, json(setup));
+/** Discards the current plan (or in-progress analysis) and goes back to
+ * Setup. Refused (409) once the project has been approved. */
+export const reopenSetup = (id: string) =>
+  req<Project>(`/projects/${id}/reopen-setup`, { method: "POST" });
+export const deleteProject = (id: string) =>
+  reqVoid(`/projects/${id}`, { method: "DELETE" });
 export const runPlanning = (id: string) =>
   req<Project>(`/projects/${id}/analyse`, { method: "POST" });
 export const updateBeatStatus = (id: string, bid: string, status: string) =>

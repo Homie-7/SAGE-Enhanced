@@ -7,8 +7,8 @@
 
 The simplest way to get SAGE online: **one Railway service** hosts both the
 API and the app itself (the backend serves the built frontend from the same
-address). One login, one dashboard, one URL. No Vercel account, no CORS
-setup, no copying URLs between two places.
+address). One login, one dashboard, one URL. No CORS setup, no copying
+URLs between two places, no separate frontend platform.
 
 ## Steps
 
@@ -27,9 +27,11 @@ setup, no copying URLs between two places.
    | `SAGE_DB_PATH` | `/data/sage.db` |
    | `SAGE_ARTEFACT_ROOT` | `/data/artefacts` |
    | `VAL_API_KEY` | *your real VAL key — paste only here* |
-   | `VAL_BASE_URL` | *your VAL gateway's base URL* |
-   | `VAL_API_STYLE` | *`openai_chat` or `anthropic_messages`* |
-   | `VAL_MODEL` | *the VAL model id* |
+
+   (`VAL_BASE_URL`/`VAL_API_STYLE`/`VAL_MODEL` no longer need setting here —
+   `prompts/configs/val.json` now ships wired to the real RMIT gateway. Only
+   add these as variables if you want to point this specific deployment at
+   a different gateway/model than what's checked in.)
 
 4. **Generate a public domain**: service → **Settings → Networking →
    Generate Domain**. Open it in a browser — that's the whole app.
@@ -48,13 +50,9 @@ provider-switching, never which provider real projects use.
 
 ## Notes / assumptions
 
-- I don't know VAL's exact gateway shape — `VAL_BASE_URL`/`VAL_API_STYLE`/
-  `VAL_MODEL` are placeholders for you to fill in from your VAL access
-  details. Failures report exactly what's wrong (bad URL, wrong style,
-  rejected credential).
+- VAL is wired to the real RMIT NPE gateway (`prompts/configs/val.json`) —
+  only `VAL_API_KEY` (the secret) needs supplying. Failures report exactly
+  what's wrong (bad URL, wrong style, rejected credential) if that ever
+  changes.
 - This is staging, not production: no custom domain, no autoscaling
   tuning. Fine for internal review with colleagues.
-- A split Railway (API) + Vercel (frontend) path also exists in this repo
-  (`frontend/vercel.json`, `frontend/.env.example`, `SAGE_CORS_ORIGINS`) in
-  case you ever want the frontend on a separate platform — not needed for
-  this default single-service path, and safe to ignore.

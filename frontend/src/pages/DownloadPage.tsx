@@ -1,8 +1,9 @@
 /** Step 6 — the result. Download appears only when validation completes;
  * otherwise the blockers say exactly what's needed. */
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { downloadUrl, getProject } from "../api/client";
+import { useNavigate, useParams } from "react-router-dom";
+import { downloadUrl, getProject, reopenSetup } from "../api/client";
+import { ConfirmAction } from "../components/ConfirmAction";
 import { Shell } from "../components/Shell";
 import { ValidationReportView } from "../components/ValidationReportView";
 import type { Project } from "../types/state";
@@ -11,6 +12,7 @@ export function DownloadPage() {
   const { id = "" } = useParams();
   const [project, setProject] = useState<Project | null>(null);
   const [error, setError] = useState("");
+  const nav = useNavigate();
 
   useEffect(() => { getProject(id).then(setProject).catch(e => setError(String(e))); }, [id]);
 
@@ -19,6 +21,11 @@ export function DownloadPage() {
       {error || "Loading project"}</div></Shell>;
   }
   const done = project.meta.phase === "complete";
+  // A failure here can mean two very different things: a planning crash
+  // (pre-approval — setup can still be reopened) or a rebuild/validation
+  // failure (post-approval — approval is a one-way gate, setup stays
+  // locked). project.approval is the honest signal, not the phase name.
+  const canReopen = project.meta.phase === "failed" && !project.approval;
 
   return (
     <Shell project={project}>
@@ -48,6 +55,26 @@ export function DownloadPage() {
       {project.validation && <div className="section">
         <ValidationReportView report={project.validation} />
       </div>}
+
+      {error && <div className="alert danger"><p>{error}</p></div>}
+
+      {canReopen && (
+        <div className="actions">
+          <span className="push" />
+          <ConfirmAction
+            className="btn-quiet-danger"
+            label="Back to setup"
+            confirmLabel="Discard this plan and go back"
+            message="This discards the failed plan so you can try again."
+            onConfirm={async () => {
+              try {
+                await reopenSetup(id);
+                nav(`/projects/${id}/setup`);
+              } catch (e) { setError(String(e)); }
+            }}
+          />
+        </div>
+      )}
 
       {done && (
         <div className="alert">

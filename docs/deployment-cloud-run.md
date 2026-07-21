@@ -32,9 +32,11 @@ Run is the least-friction option, not a workaround.
    |---|---|
    | `SAGE_PROVIDER` | `val` |
    | `SAGE_ADMIN_MODE` | `0` |
-   | `VAL_BASE_URL` | your VAL gateway's base URL |
-   | `VAL_API_STYLE` | `openai_chat` or `anthropic_messages` |
-   | `VAL_MODEL` | your VAL model id |
+
+   (`VAL_BASE_URL`/`VAL_API_STYLE`/`VAL_MODEL` don't need setting —
+   `prompts/configs/val.json` already ships wired to the real RMIT NPE
+   gateway. Only add these as variables if you want this deployment to use
+   a different gateway/model than what's checked in.)
 
    Then add `VAL_API_KEY` as a **secret**, not a plain variable: click
    **Reference a secret** → **Create new secret** → paste your real VAL
@@ -87,9 +89,9 @@ Google-initiated instance recycling.
 
 ## Notes / assumptions
 
-- I don't know VAL's exact gateway shape — `VAL_BASE_URL`/`VAL_API_STYLE`/
-  `VAL_MODEL` are placeholders for you to fill in. Failures report exactly
-  what's wrong (bad URL, wrong style, rejected credential).
+- VAL is wired to the real RMIT NPE gateway and confirmed working (a live
+  round-trip has been run against it). Only `VAL_API_KEY` (the secret)
+  needs supplying per deployment.
 - This is staging, not production: no custom domain, no autoscaling
   tuning beyond the optional note above.
 - The Railway path (`docs/deployment-staging.md`) still works unchanged

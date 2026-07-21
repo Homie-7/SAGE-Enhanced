@@ -81,6 +81,20 @@ async def run_planning(project_id: str, background: BackgroundTasks,
     return project_out(project)
 
 
+@router.post("/reopen-setup", response_model=None)
+async def reopen_setup(project_id: str, store=Depends(get_store), engine=Depends(get_engine)):
+    """Explicit user action: stop treating the current plan (or in-progress
+    analysis) as final and go back to Setup. Refused once approved — see
+    OrchestrationEngine.reopen_setup for the exact rule and what it clears."""
+    project = await _get(project_id, store)
+    try:
+        return project_out(await engine.reopen_setup(project))
+    except ApprovalGateError as exc:
+        raise HTTPException(409, str(exc))
+    except IllegalTransitionError as exc:
+        raise HTTPException(409, str(exc))
+
+
 @router.post("/rebuild", response_model=None)
 async def trigger_rebuild(project_id: str, store=Depends(get_store), engine=Depends(get_engine)):
     """Rebuild. The engine's approval gate hard-fails unless the project is

@@ -1,7 +1,8 @@
 /** Step 3 — planning runs in the background; this page keeps calm and polls. */
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { getProject, phaseRoute } from "../api/client";
+import { getProject, phaseRoute, reopenSetup } from "../api/client";
+import { ConfirmAction } from "../components/ConfirmAction";
 import { Shell } from "../components/Shell";
 import type { Project } from "../types/state";
 
@@ -17,20 +18,22 @@ const PIPELINE = [
 export function ProcessingPage() {
   const { id = "" } = useParams();
   const [project, setProject] = useState<Project | null>(null);
+  const [error, setError] = useState("");
   const nav = useNavigate();
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
-    const timer = setInterval(async () => {
+    timerRef.current = setInterval(async () => {
       try {
         const p = await getProject(id);
         setProject(p);
         if (!["setup_complete", "analysing"].includes(p.meta.phase)) {
-          clearInterval(timer);
+          if (timerRef.current) clearInterval(timerRef.current);
           nav(phaseRoute(p));
         }
       } catch { /* keep polling */ }
     }, 1500);
-    return () => clearInterval(timer);
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [id, nav]);
 
   return (
@@ -43,6 +46,25 @@ export function ProcessingPage() {
         <ul className="task-list">
           {PIPELINE.map(step => <li key={step}>{step}</li>)}
         </ul>
+      </div>
+
+      {error && <div className="alert danger"><p>{error}</p></div>}
+
+      <div className="actions">
+        <span className="push" />
+        <ConfirmAction
+          className="btn-quiet-danger"
+          label="Back to setup"
+          confirmLabel="Stop and go back"
+          message="This stops the current analysis and discards this plan."
+          onConfirm={async () => {
+            if (timerRef.current) clearInterval(timerRef.current);
+            try {
+              await reopenSetup(id);
+              nav(`/projects/${id}/setup`);
+            } catch (e) { setError(String(e)); }
+          }}
+        />
       </div>
     </Shell>
   );

@@ -5,9 +5,13 @@
  */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createProject, getAdminStatus, getMeta, listProjects, phaseRoute } from "../api/client";
+import {
+  createProject, deleteProject, getAdminStatus, getMeta, listProjects, phaseRoute,
+} from "../api/client";
 import type { AdminStatus, AppMeta } from "../api/client";
+import { ConfirmAction } from "../components/ConfirmAction";
 import { Shell } from "../components/Shell";
+import { WelcomeModal } from "../components/WelcomeModal";
 import type { Project } from "../types/state";
 
 const PHASE_LABEL: Record<string, string> = {
@@ -18,6 +22,12 @@ const PHASE_LABEL: Record<string, string> = {
   rebuilding: "Rebuilding", validating: "Validating",
   complete: "Complete", failed: "Needs attention",
 };
+
+// Display only — the stored identifier (provider: "val", VAL_API_KEY, the
+// registry key, prompts/configs/val.json) stays lowercase; this just fixes
+// how the name reads for a human, the same way PHASE_LABEL does for phases.
+const PROVIDER_LABEL: Record<string, string> = { val: "VAL", claude: "Claude", mock: "Mock" };
+const providerLabel = (p: string) => PROVIDER_LABEL[p] ?? p;
 
 export function ProjectsPage() {
   const [projects, setProjects] = useState<Project[] | null>(null);
@@ -46,6 +56,7 @@ export function ProjectsPage() {
 
   return (
     <Shell adminMode={meta.admin_mode}>
+      <WelcomeModal />
       <h1>Projects</h1>
       <p className="page-sub">Each project takes one recorded interview from
         source timeline to an edited sequence, with your approval in the middle.</p>
@@ -71,7 +82,7 @@ export function ProjectsPage() {
           <h2>Provider testing — admin only</h2>
           {status && Object.entries(status.providers).map(([name, p]) => (
             <div key={name} className="provider-row">
-              <span className="name">{name}</span>
+              <span className="name">{providerLabel(name)}</span>
               <span className={"pill " + (p.ready ? "ok" : "warn")}>
                 {p.ready ? "ready" : "not configured"}
               </span>
@@ -84,8 +95,8 @@ export function ProjectsPage() {
             <span className="small dim">Run new projects on</span>
             <select value={provider} onChange={e => setProvider(e.target.value)}
                     style={{ maxWidth: 220 }} aria-label="Provider for new projects">
-              <option value="">default ({meta.default_provider})</option>
-              {meta.available_providers?.map(v => <option key={v} value={v}>{v}</option>)}
+              <option value="">default ({providerLabel(meta.default_provider ?? "")})</option>
+              {meta.available_providers?.map(v => <option key={v} value={v}>{providerLabel(v)}</option>)}
             </select>
           </div>
           <p className="small faint" style={{ margin: "10px 0 0" }}>
@@ -111,7 +122,7 @@ export function ProjectsPage() {
               <thead>
                 <tr><th>Name</th><th>Status</th>
                     {meta.admin_mode && <th>Provider</th>}
-                    <th>Updated</th></tr>
+                    <th>Updated</th><th /></tr>
               </thead>
               <tbody>
                 {projects.map(p => (
@@ -127,9 +138,23 @@ export function ProjectsPage() {
                         {PHASE_LABEL[p.meta.phase] ?? p.meta.phase}
                       </span>
                     </td>
-                    {meta.admin_mode && <td className="mono dim">{p.meta.provider}</td>}
+                    {meta.admin_mode && <td className="mono dim">{providerLabel(p.meta.provider ?? "")}</td>}
                     <td className="dim small">
                       {new Date(p.meta.updated_at).toLocaleString()}
+                    </td>
+                    <td onClick={e => e.stopPropagation()}>
+                      <ConfirmAction
+                        className="btn-quiet-danger small"
+                        label="Delete"
+                        confirmLabel="Delete for good"
+                        message={`Delete "${p.meta.name}"? This can't be undone.`}
+                        onConfirm={async () => {
+                          try {
+                            await deleteProject(p.meta.id);
+                            setProjects(prev => (prev ?? []).filter(x => x.meta.id !== p.meta.id));
+                          } catch (e) { setError(String(e)); }
+                        }}
+                      />
                     </td>
                   </tr>
                 ))}

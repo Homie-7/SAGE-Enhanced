@@ -125,11 +125,19 @@ def test_lnd_aligned_transcript_annotates_divergences():
 
 @pytestmark_real
 def test_feasibility_reports_val_context_limit_honestly():
+    """VAL's max_context_tokens (32000, wired to Opus 4.7 via the RMIT NPE
+    gateway) comfortably covers this source's transcript — confirmed live
+    end-to-end (source_audit through paper_edit all completed on real VAL
+    output). Note the real ceiling for material_classification-sized
+    outputs on this source isn't context size but RMIT's Azure Application
+    Gateway, which hard-times-out any single request at ~120s regardless of
+    provider config — chunking, not a bigger context/output number, is the
+    real fix for sources long enough to hit that wall."""
     lnd = CaseManifest.load(CASES / "lnd_showcase")
     src = next(s for s in lnd.sources if s.source_id == "interior_design")
     before = profile_timeline(CASES / "lnd_showcase" / src.before_xml)
     t = load_word_timed_json(CASES / "lnd_showcase" / src.transcript_json)
     configs = Path(__file__).resolve().parents[3] / "prompts" / "configs"
     feas = assess_source(src.source_id, before, t, configs)
-    assert "DOES NOT FIT" in feas.provider_fit["val"]
+    assert "fits single-pass" in feas.provider_fit["val"]
     assert "fits single-pass" in feas.provider_fit["claude"]

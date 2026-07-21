@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 from app import config
 from app.api.serializers import project_out, projects_out
-from app.api.deps import get_registry, get_store
+from app.api.deps import get_artefacts, get_registry, get_store
 from app.schemas.state import Project, ProjectMeta
 
 router = APIRouter(prefix="/api/projects", tags=["projects"])
@@ -45,6 +45,22 @@ async def get_project(project_id: str, store=Depends(get_store)):
     if project is None:
         raise HTTPException(404, "Project not found.")
     return project_out(project)
+
+
+@router.delete("/{project_id}", status_code=204, response_model=None)
+async def delete_project(project_id: str, store=Depends(get_store),
+                         artefacts=Depends(get_artefacts)):
+    """Delete a project's record and its uploaded/rebuilt files, at any
+    phase — including mid-analysis. Safe against a still-running background
+    planning task because that task checks (after every task it saves) that
+    the project still exists at all; if not, it stops rather than
+    resurrecting the row via its next save (see
+    OrchestrationEngine._superseded)."""
+    project = await store.get(project_id)
+    if project is None:
+        raise HTTPException(404, "Project not found.")
+    await store.delete(project_id)
+    await artefacts.delete_project(project_id)
 
 
 class ChangeProviderRequest(BaseModel):

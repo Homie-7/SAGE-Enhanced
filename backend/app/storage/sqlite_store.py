@@ -8,6 +8,7 @@ later swap is an implementation change, not a redesign.
 from __future__ import annotations
 
 import json
+import shutil
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -104,3 +105,6 @@ class DiskArtefactStore:
 
     async def read(self, project_id: str, filename: str) -> bytes:
         return Path(self.path_for(project_id, filename)).read_bytes()
+
+    async def delete_project(self, project_id: str) -> None:
+        shutil.rmtree(self._root / project_id, ignore_errors=True)

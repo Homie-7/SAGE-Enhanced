@@ -1,8 +1,8 @@
 {
   "provider": "val",
-  "model": "gpt-5.6-sol",
-  "max_context_tokens": 16000,
-  "max_output_tokens": 2000,
+  "model": "au-anthropic-claude-opus-4-7",
+  "max_context_tokens": 32000,
+  "max_output_tokens": 20000,
   "supports_system_prompt": true,
   "supports_json_schema_mode": false,
   "json_strategy": "prompt_and_repair",
@@ -14,7 +14,7 @@
     "auth_env": "VAL_API_KEY",
     "auth_header": "Authorization",
     "auth_scheme": "Bearer",
-    "timeout_seconds": 120.0,
+    "timeout_seconds": 130.0,
     "transport_retries": 1
   },
   "_wiring": "VAL is wired to the same OpenAI-compatible RMIT NPE gateway used by h5p Creator: POST https://val-npe.rmit.edu.au/api/chat/completions. Set VAL_API_KEY on the SAGE server (never in this file, never from users), then confirm via GET /api/admin/status in an admin deployment. Adjust auth_header/auth_scheme only if the gateway changes to a non-standard header.",

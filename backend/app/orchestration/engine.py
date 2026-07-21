@@ -33,11 +33,14 @@ from app.schemas.state import (
     BeatStatus,
     Blocker,
     CheckOutcome,
+    DecisionLedger,
     OutputArtefact,
     PaperEdit,
     Project,
     ProjectPhase,
     RevisionDelta,
+    SourceAudit,
+    StructurePlan,
     ValidationReport,
 )
 from app.schemas.tasks import RebuildPlanOutput, RevisionOutput
@@ -181,11 +184,21 @@ class OrchestrationEngine:
         project.meta.phase = ProjectPhase.FAILED
         return await self._store.save(project)
 
+    async def _superseded(self, project_id: str, started_generation: int) -> bool:
+        """True if this project was reopened to Setup (generation moved on)
+        or deleted (no longer exists) since this run_planning call started.
+        Checked after every save in the loop below so a stale background
+        task stops instead of overwriting fresher state — see
+        reopen_setup's docstring for the write side of this contract."""
+        fresh = await self._store.get(project_id)
+        return fresh is None or fresh.meta.run_generation != started_generation
+
     # -- planning ------------------------------------------------------------
 
     async def run_planning(self, project: Project) -> Project:
         """Run PLANNING_TASK_ORDER end to end, updating structured state
         after each task."""
+        started_generation = project.meta.run_generation
         project = await self.transition(project, ProjectPhase.ANALYSING)
         settle_from_setup(project)
 
@@ -215,6 +228,8 @@ class OrchestrationEngine:
         }
         project.source_audit.source_count = 1  # V1: single source
         await self._store.save(project)
+        if await self._superseded(project.meta.id, started_generation):
+            return project
 
         try:
             transcript = await self._read_transcript(project)
@@ -226,6 +241,8 @@ class OrchestrationEngine:
                 )
                 task.apply(project, model, transcript)
                 await self._store.save(project)
+                if await self._superseded(project.meta.id, started_generation):
+                    return project
         except TaskFailure as exc:
             return await self._fail(project, exc.blocker)
         except TaskApplyError as exc:
@@ -236,6 +253,34 @@ class OrchestrationEngine:
             ))
 
         return await self.transition(project, ProjectPhase.PAPER_EDIT_READY)
+
+    # -- reopening setup ------------------------------------------------------
+
+    async def reopen_setup(self, project: Project) -> Project:
+        """Explicit, human-initiated reset back to Setup — from Setup itself,
+        from Processing (analysing), or from a pre-approval failure. Discards
+        the planning-derived state wholesale (never partially) but keeps
+        setup answers and uploaded inputs, so the Setup page reopens
+        pre-filled rather than blank. Bumps run_generation so an in-flight
+        run_planning background task (if any) detects it has been
+        superseded and stops instead of overwriting this reset — see
+        _superseded above."""
+        if project.approval is not None:
+            raise ApprovalGateError(
+                "Cannot reopen setup: this project has already been "
+                "approved. Approval is a one-way gate."
+            )
+        project.meta.run_generation += 1
+        project.source_audit = SourceAudit()
+        project.roster = []
+        project.classification = []
+        project.groups = []
+        project.structure = StructurePlan()
+        project.paper_edit = None
+        project.paper_edit_history = []
+        project.ledger = DecisionLedger()
+        project.validation = None
+        return await self.transition(project, ProjectPhase.INPUTS_UPLOADED)
 
     # -- review helpers ------------------------------------------------------
 

@@ -49,11 +49,20 @@ class ProjectPhase(str, Enum):
 
 
 # Legal transitions. The engine refuses anything else.
+#
+# The three INPUTS_UPLOADED targets below (from SETUP_COMPLETE, ANALYSING,
+# FAILED) are the "reopen setup" path. The graph alone can't express that
+# FAILED must only be reopenable when the failure happened during planning,
+# not during rebuild/validation (both land on FAILED, but only rebuild
+# happens after approval) — that extra rule lives in
+# OrchestrationEngine.reopen_setup, which checks project.approval is None
+# before calling transition().
 PHASE_TRANSITIONS: dict[ProjectPhase, set[ProjectPhase]] = {
     ProjectPhase.CREATED: {ProjectPhase.INPUTS_UPLOADED},
     ProjectPhase.INPUTS_UPLOADED: {ProjectPhase.SETUP_COMPLETE},
-    ProjectPhase.SETUP_COMPLETE: {ProjectPhase.ANALYSING},
-    ProjectPhase.ANALYSING: {ProjectPhase.PAPER_EDIT_READY, ProjectPhase.FAILED},
+    ProjectPhase.SETUP_COMPLETE: {ProjectPhase.ANALYSING, ProjectPhase.INPUTS_UPLOADED},
+    ProjectPhase.ANALYSING: {ProjectPhase.PAPER_EDIT_READY, ProjectPhase.FAILED,
+                             ProjectPhase.INPUTS_UPLOADED},
     ProjectPhase.PAPER_EDIT_READY: {ProjectPhase.IN_REVIEW},
     ProjectPhase.IN_REVIEW: {ProjectPhase.REVISING, ProjectPhase.APPROVED},
     ProjectPhase.REVISING: {ProjectPhase.IN_REVIEW, ProjectPhase.FAILED},
@@ -61,7 +70,7 @@ PHASE_TRANSITIONS: dict[ProjectPhase, set[ProjectPhase]] = {
     ProjectPhase.REBUILDING: {ProjectPhase.VALIDATING, ProjectPhase.FAILED},
     ProjectPhase.VALIDATING: {ProjectPhase.COMPLETE, ProjectPhase.FAILED},
     ProjectPhase.COMPLETE: set(),
-    ProjectPhase.FAILED: set(),
+    ProjectPhase.FAILED: {ProjectPhase.INPUTS_UPLOADED},
 }
 
 
@@ -422,6 +431,11 @@ class ProjectMeta(BaseModel):
     provider: str = "mock"
     provider_history: list[dict] = Field(default_factory=list)
     schema_version: int = 1
+    # Bumped every time setup is reopened. Lets a background run_planning
+    # loop (which saves after every task) detect it has been superseded by
+    # a reopen (or the project being deleted, where the fresh read is None)
+    # and stop instead of overwriting fresher state.
+    run_generation: int = 0
 
 
 class Project(BaseModel):
