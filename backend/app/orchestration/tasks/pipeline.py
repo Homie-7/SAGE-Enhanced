@@ -75,6 +75,7 @@ def ctx_contributor_roster(project: Project, transcript_text: str) -> dict:
     return {
         "known_contributors": project.setup.known_contributors,
         "material_type_guess": project.source_audit.material_type_guess,
+        "crew_interviewer_handling": project.setup.crew_interviewer.value or "exclude",
         "transcript": transcript_text,
     }
 

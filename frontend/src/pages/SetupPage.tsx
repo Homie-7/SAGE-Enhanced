@@ -39,6 +39,11 @@ const PRESETS: Record<string, { label: string; hint: string; options: string[] }
     hint: "Who appears in the cut.",
     options: ["all meaningful", "strongest only"],
   },
+  crew_interviewer: {
+    label: "Crew & interviewer voices",
+    hint: "Off-camera prompts and crew talk are excluded from the cut by default.",
+    options: ["exclude", "consider"],
+  },
 };
 
 type Choice = { preset: string; custom: string };
@@ -58,6 +63,7 @@ export function SetupPage() {
   const [choices, setChoices] = useState<Record<string, Choice>>({
     tone: infer, cut_style: { preset: "natural", custom: "" },
     opening: infer, ending: infer, contributor_rule: infer,
+    crew_interviewer: { preset: "exclude", custom: "" },
   });
   const [runtime, setRuntime] = useState("");
   const [mustKeep, setMustKeep] = useState("");
@@ -83,6 +89,9 @@ export function SetupPage() {
         opening: toField(choices.opening),
         ending: toField(choices.ending),
         contributor_rule: toField(choices.contributor_rule),
+        crew_interviewer: toField(choices.crew_interviewer).value
+          ? toField(choices.crew_interviewer)
+          : { value: "exclude", origin: "default" },
         must_keep: list(mustKeep),
         avoid: list(avoid),
       });
@@ -91,9 +100,12 @@ export function SetupPage() {
     } catch (e) { setError(String(e)); setBusy(false); }
   };
 
+  const FIELD_DEFAULTS: Record<string, string> = { cut_style: "natural", crew_interviewer: "exclude" };
+
   const presetRow = (key: string) => {
     const p = PRESETS[key];
     const c = choices[key];
+    const hasFieldDefault = key in FIELD_DEFAULTS;
     return (
       <div className="field-row" key={key}>
         <div className="field-label">{p.label}</div>
@@ -104,10 +116,10 @@ export function SetupPage() {
             style={{ maxWidth: 240 }}
             aria-label={p.label}
           >
-            <option value="">Infer from material{key === "cut_style" ? "" : " (default)"}</option>
+            <option value="">Infer from material{hasFieldDefault ? "" : " (default)"}</option>
             {p.options.map(o =>
               <option key={o} value={o}>
-                {o}{key === "cut_style" && o === "natural" ? " (default)" : ""}
+                {o}{FIELD_DEFAULTS[key] === o ? " (default)" : ""}
               </option>)}
             <option value={CUSTOM}>Custom…</option>
           </select>
@@ -144,6 +156,7 @@ export function SetupPage() {
         {presetRow("opening")}
         {presetRow("ending")}
         {presetRow("contributor_rule")}
+        {presetRow("crew_interviewer")}
         <div className="field-row">
           <div className="field-label">Must keep</div>
           <div><input value={mustKeep} onChange={e => setMustKeep(e.target.value)}

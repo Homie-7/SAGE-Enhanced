@@ -195,6 +195,12 @@ class ProjectSetup(BaseModel):
     cut_style: SetupField = SetupField(value=CleanupStrategy.NATURAL.value)
     representation: SetupField = SetupField()
     contributor_rule: SetupField = SetupField()
+    # Default matches the standing editorial convention (crew/interviewer
+    # voices don't belong in the finished cut) — same behaviour as before
+    # this was made an explicit choice. "consider" opts a project out of
+    # that convention, for the rare piece that wants them weighed like any
+    # other contributor.
+    crew_interviewer: SetupField = SetupField(value="exclude")
     opening: SetupField = SetupField()
     ending: SetupField = SetupField()
     clarity: SetupField = SetupField()
@@ -436,6 +442,12 @@ class ProjectMeta(BaseModel):
     # a reopen (or the project being deleted, where the fresh read is None)
     # and stop instead of overwriting fresher state.
     run_generation: int = 0
+    # Count of PLANNING_TASK_ORDER tasks completed in the current/last
+    # run_planning call (0-6). Incremented once per task, right after that
+    # task's own save — a precise signal, not inferred from whether an
+    # output field happens to be non-empty (a task can legitimately produce
+    # an empty list). Reset to 0 by reopen_setup.
+    planning_progress: int = 0
 
 
 class Project(BaseModel):

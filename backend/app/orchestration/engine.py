@@ -199,6 +199,7 @@ class OrchestrationEngine:
         """Run PLANNING_TASK_ORDER end to end, updating structured state
         after each task."""
         started_generation = project.meta.run_generation
+        project.meta.planning_progress = 0
         project = await self.transition(project, ProjectPhase.ANALYSING)
         settle_from_setup(project)
 
@@ -240,6 +241,7 @@ class OrchestrationEngine:
                     project, task_name, task.canonical_files, context, task.output_model
                 )
                 task.apply(project, model, transcript)
+                project.meta.planning_progress += 1
                 await self._store.save(project)
                 if await self._superseded(project.meta.id, started_generation):
                     return project
@@ -271,6 +273,7 @@ class OrchestrationEngine:
                 "approved. Approval is a one-way gate."
             )
         project.meta.run_generation += 1
+        project.meta.planning_progress = 0
         project.source_audit = SourceAudit()
         project.roster = []
         project.classification = []

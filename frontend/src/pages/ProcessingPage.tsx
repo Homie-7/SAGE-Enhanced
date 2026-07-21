@@ -36,15 +36,25 @@ export function ProcessingPage() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [id, nav]);
 
+  const done = project?.meta.planning_progress ?? 0;
+  const pct = Math.round((done / PIPELINE.length) * 100);
+
   return (
     <Shell project={project}>
       <h1>Planning the cut</h1>
       <p className="page-sub">SAGE is reading the timeline and transcript.
         This can take a few minutes; the page moves on by itself.</p>
       <div className="panel">
-        <div className="sweep" role="progressbar" aria-label="Planning in progress" />
+        <div className="progress-track" role="progressbar" aria-label="Planning progress"
+             aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
+          <div className="progress-fill" style={{ width: `${pct}%` }} />
+        </div>
         <ul className="task-list">
-          {PIPELINE.map(step => <li key={step}>{step}</li>)}
+          {PIPELINE.map((step, i) => (
+            <li key={step} className={i < done ? "done" : i === done ? "current" : ""}>
+              {i < done ? "✓ " : ""}{step}
+            </li>
+          ))}
         </ul>
       </div>
 

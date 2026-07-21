@@ -10,8 +10,14 @@ Build the contributor roster from the transcript.
 - Assign a stable CID per distinct speaker (C1, C2, …).
 - Use provisional labels where identity is not certain; note ambiguity in
   `ambiguity_note` and reflect it in `confidence` (high/medium/low).
-- Set `status` per canonical rules: interviewer prompts and off-mic voices
-  that should not appear in the cut are `exclude` or `minimise`.
+- Set `status` per canonical rules, governed by `crew_interviewer_handling`
+  in the context:
+  - `"exclude"` (the standing default): interviewer prompts and off-mic
+    crew voices that should not appear in the cut are `exclude` or
+    `minimise`.
+  - `"consider"`: evaluate interviewer/crew voices on their own editorial
+    merit like any other contributor, rather than excluding them by
+    convention.
 - `value_note`: one short phrase on what this contributor offers the edit.
 - Never merge speakers you cannot confidently resolve as the same person.
 

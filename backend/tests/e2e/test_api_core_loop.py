@@ -63,6 +63,9 @@ def test_api_core_loop(client):
             break
     assert project["meta"]["phase"] == "paper_edit_ready", project.get("validation")
     assert len(project["paper_edit"]["beats"]) == 8
+    # All 6 planning tasks completed — the real progress signal, not
+    # inferred from output fields (which can legitimately be empty).
+    assert project["meta"]["planning_progress"] == 6
 
     # 5/6. review: reject nothing, lock one explicitly, then approve
     r = client.post(f"/api/projects/{pid}/beats/status",

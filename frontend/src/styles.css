@@ -465,6 +465,21 @@ tr.beat-locked { background: rgba(230, 0, 40, 0.04); }
 tr.beat-rejected { opacity: 0.42; }
 tr.beat-rejected .quote { text-decoration: line-through; }
 .quote { color: var(--text); max-width: 360px; }
+
+.narrative { font-size: 15px; line-height: 1.7; }
+.narrative p { margin: 0 0 14px; }
+.narrative p:last-child { margin-bottom: 0; }
+
+.technical-detail summary {
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 0;
+}
+.technical-detail summary:hover { color: var(--text); }
+.technical-detail[open] summary { color: var(--text); margin-bottom: 12px; }
 .why { color: var(--text-dim); max-width: 220px; font-size: 12.5px; }
 .flag {
   display: block;
@@ -500,6 +515,20 @@ tr.beat-rejected .quote { text-decoration: line-through; }
   to { transform: translateX(360%); }
 }
 
+.progress-track {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--red);
+  border-radius: 2px;
+  transition: width 500ms var(--ease);
+}
+
 .task-list { list-style: none; margin: 18px 0 0; padding: 0; }
 .task-list li {
   display: flex;
@@ -518,6 +547,11 @@ tr.beat-rejected .quote { text-decoration: line-through; }
   background: var(--border-strong);
   flex: none;
 }
+.task-list li.done { color: var(--text-dim); }
+.task-list li.done::before { background: var(--red); }
+.task-list li.current { color: var(--text); font-weight: 600; }
+.task-list li.current::before { background: var(--red); animation: task-pulse 1.2s ease-in-out infinite; }
+@keyframes task-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
 /* ---------- validation checks ---------- */
 

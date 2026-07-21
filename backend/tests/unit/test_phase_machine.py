@@ -47,6 +47,7 @@ async def test_reopen_setup_allowed_pre_approval(phase):
     engine = OrchestrationEngine(_NullStore(), registry=None)
     project = _project(phase)
     project.paper_edit = PaperEdit(version=1, beats=[])
+    project.meta.planning_progress = 6
     started_generation = project.meta.run_generation
 
     result = await engine.reopen_setup(project)
@@ -54,6 +55,10 @@ async def test_reopen_setup_allowed_pre_approval(phase):
     assert result.meta.phase == ProjectPhase.INPUTS_UPLOADED
     assert result.meta.run_generation == started_generation + 1
     assert result.paper_edit is None
+    # The progress signal must not carry over into a project that hasn't
+    # started analysing again — otherwise the next Processing page render
+    # would falsely show 6/6 before the first task of the new run finishes.
+    assert result.meta.planning_progress == 0
 
 
 @pytest.mark.parametrize("phase", [

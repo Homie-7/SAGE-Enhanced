@@ -50,6 +50,9 @@ export interface ValidationReport {
 export interface ProjectMeta {
   id: string; name: string; created_at: string; updated_at: string;
   phase: ProjectPhase; schema_version: number;
+  run_generation: number;
+  /** Count of the 6 planning tasks completed in the current/last run (0-6). */
+  planning_progress: number;
   /** Present only in admin/dev deployments; redacted in standard mode. */
   provider?: string;
   provider_history?: Record<string, string>[];
